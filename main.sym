@@ -1,0 +1,172 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @MEMSET.P2
+004-005 @WRITE_PROGRAM_MEMORY8.P3
+015     CCP_1
+015     CCP_1_LOW
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020-021 __DYNAMIC_HEAD
+022-023 @sprintf_string
+024-033 MAIN.board
+024-027 atan2.y
+028-02B atan2.x
+02C-02F atan2.z
+030.0   atan2.sign
+031     atan2.quad
+034-043 MAIN.freePos
+044     MAIN.gen1
+045     MAIN.gen2
+046     MAIN.score
+047     MAIN.keyInput
+048     MAIN.randPos
+049     MAIN.newPos
+04A     MAIN.value
+04B.0   MAIN.canMove
+04B.1   MAIN.canMove
+04C     MAIN.count
+04D     MAIN.i
+04E     MAIN.j
+04F     MAIN.i
+050     MAIN.gen1Tmp
+051     MAIN.i
+052     MAIN.j
+053     MAIN.i
+054     MAIN.j
+055     MAIN.i
+056     MAIN.j
+057     MAIN.i
+058     MAIN.j
+059     MAIN.i
+05A     MAIN.j
+05B     lcd_init.i
+05B     @PSTRINGCN7_897.P1
+05B     @PRINTF_U_897.P2
+05B     MAIN.@SCRATCH1
+05B     @PSTRINGC7_9600_62_63.@SCRATCH1
+05C     @PRINTF_U_897.P1
+05C-05F lcd_init.LCD_INIT_STRING
+05C     MAIN.@SCRATCH2
+05C     @PSTRINGC7_9600_62_63.@SCRATCH2
+05C     @PSTRINGCN7_897.@SCRATCH1
+05D     @PRINTF_D_9600_62_63.P1
+05D     @MUL88.P2
+05D     @PSTRINGCN7_9600_62_63.P3
+05D     MAIN.@SCRATCH3
+05D     @PSTRINGC7_9600_62_63.@SCRATCH3
+05D     @PSTRINGCN7_897.@SCRATCH2
+05E     @PRINTF_D_9600_62_63.P1
+05E     @MUL88.P2
+05E     @PSTRINGC7_9600_62_63.@SCRATCH4
+05E     @PSTRINGCN7_897.@SCRATCH3
+05E     @PSTRINGCN7_9600_62_63.@SCRATCH1
+05F     lcd_putc.c
+05F     @PSTRINGCN7_897.@SCRATCH4
+05F     @PRINTF_D_9600_62_63.@SCRATCH1
+05F     @PSTRINGCN7_9600_62_63.@SCRATCH2
+060     lcd_gotoxy.x
+060     @delay_ms1.P1
+060     lcd_init.@SCRATCH1
+060     @PRINTF_D_9600_62_63.@SCRATCH2
+060     @PSTRINGCN7_9600_62_63.@SCRATCH3
+061     lcd_gotoxy.y
+061     @PRINTF_D_9600_62_63.@SCRATCH3
+061     @PSTRINGCN7_9600_62_63.@SCRATCH4
+062     lcd_gotoxy.address
+062     @PRINTF_D_9600_62_63.@SCRATCH4
+063     @DIV88.P1
+063     lcd_gotoxy.@SCRATCH1
+064     @DIV88.P1
+064     lcd_send_byte.address
+065     lcd_send_byte.n
+065     @DIV88.@SCRATCH1
+066     lcd_read_byte.low
+066     lcd_send_byte.@SCRATCH1
+067     lcd_read_byte.high
+067     lcd_send_nibble.n
+068     lcd_read_nibble.n
+068     lcd_read_byte.@SCRATCH1
+069     lcd_read_nibble.@SCRATCH1
+077     @SCRATCH
+077     @MEMSET.P1
+078     @SCRATCH
+078     _RETURN_
+078     @MEMSET.P1
+079     @SCRATCH
+07A     @SCRATCH
+107.6   C1OUT
+108.6   C2OUT
+10D-10E @READ_PROGRAM_MEMORY8.P1
+10D-10E @WRITE_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const923.call
+000013  @const928.call
+00002C  @const929.call
+000034  @const942.call
+00003D  @const953.call
+00004B  @const958.call
+000054  @const961.call
+00005D  @const964.call
+000066  @const967.call
+00006F  @delay_ms1
+000083  lcd_send_nibble
+0000AF  lcd_read_nibble
+0000E0  lcd_send_byte
+0000E8  lcd_read_byte
+00013C  lcd_init
+000182  @PSTRINGC7_9600_62_63
+0001DA  lcd_gotoxy
+0001EC  lcd_putc
+000218  @PSTRINGCN7_897
+000271  @DIV88
+000286  @PRINTF_U_897
+0002BD  @MUL88
+0002E2  @PRINTF_D_9600_62_63
+00033D  @PSTRINGCN7_9600_62_63
+000398  MAIN
+000398  @cinit1
+0003BB  @cinit2
+
+Project Directory:
+    D:\Ronnachai\CPE Couse\261214 Microprocessor and Interfacing\game\2048\
+
+Project Files:
+    main.c                                                  [02-เม.ย.-20 01:45  CRC=5FFEEFDB]
+    C:\Program Files (x86)\PICC\Devices\16F886.h            [21-ก.ค.-17 13:41  CRC=7107D019]
+    C:\Program Files (x86)\PICC\Drivers\time.h              [09-มิ.ย.-15 17:20  CRC=FFF18575]
+    C:\Program Files (x86)\PICC\Drivers\stdlibm.h           [04-พ.ย.-16 09:33  CRC=CB9FB4EB]
+    C:\Program Files (x86)\PICC\Drivers\stddef.h            [05-ก.ย.-14 12:47  CRC=897CEC6C]
+    C:\Program Files (x86)\PICC\Drivers\memmgmt.c           [24-ก.พ.-12 11:47  CRC=E82E24A3]
+    C:\Program Files (x86)\PICC\Drivers\math.h              [22-ก.ย.-16 09:36  CRC=9CF8C837]
+    lcd.c                                                   [31-มี.ค.-20 17:36  CRC=45472C13]
+
+Source signature=35CA2BC0
+Program memory checksum=0000
+Program memory CRC=0000
+Hex file CRC=0DDC
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F886
+    Pointer Size:   16
+    ADC Range:      0-1023
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+    Compile Mode:       CCS5
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA

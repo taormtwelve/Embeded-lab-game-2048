@@ -1,0 +1,80 @@
+[PROJECT]
+Target=main.hex
+Processor_Text=PIC16F886
+CCSVersion=5.074
+Compiler=PCM
+[Target Data]
+FileList=main.c
+[main.c]
+Type=4
+[mru-list]
+1=main.c
+
+[defines]
+buildcount=126
+
+[ProjectLog]
+Days=2
+D1=01-04-2020
+D1_L=33
+D1_L1=[13461]Started Editing.
+D1_L2=[13761]Stopped Editing.
+D1_L3=[13820]Started Editing.
+D1_L4=[15656]Stopped Editing.
+D1_L5=[15700]Started Editing.
+D1_L6=[16004]Stopped Editing.
+D1_L7=[16482]Started Editing.
+D1_L8=[17546]Stopped Editing.
+TotalEdit=39
+TotalDebug=0
+D1_E=39
+D1_D=0
+D1_L9=[17588]Project Closed.
+D1_L10=[54921]Project Opened.
+D1_L11=[55503]Started Editing.
+D1_L12=[55834]Stopped Editing.
+D1_L13=[55930]Started Editing.
+D1_L14=[56774]Stopped Editing.
+D1_L15=[56842]Started Editing.
+D1_L16=[58275]Stopped Editing.
+D1_L17=[59334]Started Editing.
+D1_L18=[61373]Stopped Editing.
+D1_L19=[61565]Started Editing.
+D1_L20=[62746]Project Closed.
+D1_L21=[63206]Project Opened.
+D1_L22=[63305]Started Editing.
+D1_L23=[63866]Stopped Editing.
+D1_L24=[64399]Started Editing.
+D1_L25=[66223]Stopped Editing.
+D1_L26=[66351]Started Editing.
+D1_L27=[67664]Stopped Editing.
+D1_L28=[67720]Started Editing.
+D1_L29=[68021]Stopped Editing.
+D1_L30=[68699]Started Editing.
+D1_L31=[69939]Stopped Editing.
+D1_L32=[84009]Started Editing.
+D1_L33=[86266]Stopped Editing.
+D2=02-04-2020
+D2_L=7
+D2_L1=[146]Started Editing.
+D2_L2=[447]Stopped Editing.
+D2_L3=[2251]Started Editing.
+D2_L4=[4352]Stopped Editing.
+D2_L5=[4472]Started Editing.
+D2_L6=[6003]Stopped Editing.
+D2_L7=[6307]Started Editing.
+
+[Opened Files]
+1=main.c
+t1=161
+2=..\lcd 16x2\ex_lcd.c
+t2=1
+Count=2
+3=..\lcd 16x2\ex_lcd.c
+t3=23
+
+[fileformats]
+forcecoff=0
+[Units]
+Count=1
+1=main (main)
