@@ -11,10 +11,10 @@ Type=4
 1=main.c
 
 [defines]
-buildcount=126
+buildcount=142
 
 [ProjectLog]
-Days=2
+Days=3
 D1=01-04-2020
 D1_L=33
 D1_L1=[13461]Started Editing.
@@ -25,7 +25,7 @@ D1_L5=[15700]Started Editing.
 D1_L6=[16004]Stopped Editing.
 D1_L7=[16482]Started Editing.
 D1_L8=[17546]Stopped Editing.
-TotalEdit=39
+TotalEdit=231
 TotalDebug=0
 D1_E=39
 D1_D=0
@@ -55,7 +55,7 @@ D1_L31=[69939]Stopped Editing.
 D1_L32=[84009]Started Editing.
 D1_L33=[86266]Stopped Editing.
 D2=02-04-2020
-D2_L=7
+D2_L=11
 D2_L1=[146]Started Editing.
 D2_L2=[447]Stopped Editing.
 D2_L3=[2251]Started Editing.
@@ -63,13 +63,31 @@ D2_L4=[4352]Stopped Editing.
 D2_L5=[4472]Started Editing.
 D2_L6=[6003]Stopped Editing.
 D2_L7=[6307]Started Editing.
+D2_L8=[6608]Stopped Editing.
+D2_E=150
+D2_D=0
+D2_L9=[6655]Project Closed.
+D2_L10=[86368]Project Opened.
+D2_L11=[86383]Started Editing.
+D3=03-04-2020
+D3_L=8
+D3_L1=[941]Stopped Editing.
+D3_E=42
+D3_D=0
+D3_L2=[941]Project Closed.
+D3_L3=[954]Project Opened.
+D3_L4=[997]Started Editing.
+D3_L5=[1380]Stopped Editing.
+D3_L6=[1487]Started Editing.
+D3_L7=[3248]Stopped Editing.
+D3_L8=[3271]Project Closed.
 
 [Opened Files]
 1=main.c
-t1=161
+t1=65
 2=..\lcd 16x2\ex_lcd.c
 t2=1
-Count=2
+Count=1
 3=..\lcd 16x2\ex_lcd.c
 t3=23
 

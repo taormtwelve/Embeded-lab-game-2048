@@ -19,7 +19,7 @@
 #use delay(clock=8M)
 
 #use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8)
-#include <time.h>
+//#include <time.h>
 #include<math.h>
 #include "lcd.c"
 #define RESET_BUTTON    PIN_d0
@@ -28,7 +28,7 @@
 
 void main()
 {  
-   
+   int primeNum[10] = {1091,1427,1753,1571,1291,2671,701,373,661,281};
    int board[n][n] = {0};
    int freePos[n*n]={0};
    int gen1 = 211, gen2 = 257;
@@ -72,13 +72,14 @@ void main()
       
       //---------------------------random Generator-----------------------------------------//
       randPos = 0;
+      if(gen2 == 0) gen2 = primeNum[count%10];
       for(int i=0;i<count;i++){
          randPos += (freePos[i]*freePos[i])%43;
       }
       randPos = abs((int)((gen1%41) * randPos))%count;
       int gen1Tmp = gen1;
       gen1 = gen2;
-      gen2 = (int)(gen2 * gen1Tmp * randPos);
+      gen2 = (int)(gen2 * gen1Tmp * randPos + 1427);
       
       board[freePos[randPos]/n][freePos[randPos]%n] = 2; //fill a new item(number 2) in board.
       //---------------------------random Generator-----------------------------------------//

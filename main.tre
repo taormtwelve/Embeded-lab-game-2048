@@ -1,5 +1,5 @@
 ÀÄmain
-   ÀÄMAIN  0/1055  Ram=58
+   ÀÄMAIN  0/1066  Ram=68
       ÃÄ@cinit1  (Inline)  Ram=0
       ÃÄlcd_init  0/70  Ram=6
       ³  ÃÄ@delay_ms1  0/20  Ram=1
@@ -16,7 +16,7 @@
       ÃÄ@delay_ms1  0/20  Ram=1
       ÃÄ@PSTRINGC7_9600_62_63  0/88  Ram=4
       ÃÄ@PSTRINGC7_9600_62_63  0/88  Ram=4
-      ÃÄ@PSTRINGCN7_897  0/89  Ram=5
+      ÃÄ@PSTRINGCN7_766  0/89  Ram=5
       ³  ÃÄlcd_putc  0/44  Ram=1
       ³  ³  ÃÄlcd_gotoxy  0/18  Ram=4
       ³  ³  ³  ÀÄlcd_send_byte  0/92  Ram=3
@@ -32,7 +32,7 @@
       ³  ³     ÀÄ*
       ³  ÀÄlcd_putc  0/44  Ram=1
       ³     ÀÄ*
-      ÃÄ@PRINTF_U_897  0/55  Ram=2
+      ÃÄ@PRINTF_U_766  0/55  Ram=2
       ³  ÃÄ@DIV88  0/21  Ram=3
       ³  ÃÄlcd_putc  0/44  Ram=1
       ³  ³  ÀÄ*
@@ -43,6 +43,7 @@
       ³     ÀÄ*
       ÃÄ@delay_ms1  0/20  Ram=1
       ÃÄ@PSTRINGC7_9600_62_63  0/88  Ram=4
+      ÃÄ@DIV88  0/21  Ram=3
       ÃÄ@MUL88  0/37  Ram=2
       ÃÄ@DIV88  0/21  Ram=3
       ÃÄ@DIV88  0/21  Ram=3

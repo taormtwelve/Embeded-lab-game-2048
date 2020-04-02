@@ -1,11 +1,11 @@
-CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
+CCS PCM C Compiler, Version 5.074, 32906               03-เม.ย.-20 00:49
 
                Filename:   D:\Ronnachai\CPE Couse\261214 Microprocessor and Interfacing\game\2048\main.lst
 
-               ROM used:   1975 words (24%)
+               ROM used:   1986 words (24%)
                            Largest free fragment is 2048
-               RAM used:   67 (18%) at main() level
-                           79 (21%) worst case
+               RAM used:   75 (20%) at main() level
+                           87 (24%) worst case
                Stack used: 0 locations
                Stack size: 8
 
@@ -82,7 +82,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0039:  DATA F6,32
 003A:  DATA F2,10
 003B:  DATA 0D,05
-003C:  DATA 00,01
+003C:  DATA 80,00
 003D:  DATA 89,04
 003E:  DATA 61,32
 003F:  DATA 64,10
@@ -135,7 +135,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 006E:  DATA 0A,00
 *
 0182:  MOVF   0B,W
-0183:  MOVWF  5B
+0183:  MOVWF  63
 0184:  BCF    0B.7
 0185:  BSF    03.5
 0186:  BSF    03.6
@@ -145,7 +145,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 018A:  NOP
 018B:  BCF    03.5
 018C:  BCF    03.6
-018D:  BTFSC  5B.7
+018D:  BTFSC  63.7
 018E:  BSF    0B.7
 018F:  BSF    03.6
 0190:  MOVF   0C,W
@@ -153,29 +153,29 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0192:  BTFSC  03.2
 0193:  GOTO   1D8
 0194:  BCF    03.6
-0195:  MOVWF  5B
+0195:  MOVWF  63
 0196:  BSF    03.6
 0197:  MOVF   0D,W
 0198:  BCF    03.6
-0199:  MOVWF  5C
+0199:  MOVWF  64
 019A:  BSF    03.6
 019B:  MOVF   0F,W
 019C:  BCF    03.6
-019D:  MOVWF  5D
-019E:  MOVF   5B,W
+019D:  MOVWF  65
+019E:  MOVF   63,W
 019F:  BTFSS  0C.4
 01A0:  GOTO   19F
 01A1:  MOVWF  19
-01A2:  MOVF   5C,W
+01A2:  MOVF   64,W
 01A3:  BSF    03.6
 01A4:  MOVWF  0D
 01A5:  BCF    03.6
-01A6:  MOVF   5D,W
+01A6:  MOVF   65,W
 01A7:  BSF    03.6
 01A8:  MOVWF  0F
 01A9:  BCF    03.6
 01AA:  MOVF   0B,W
-01AB:  MOVWF  5E
+01AB:  MOVWF  66
 01AC:  BCF    0B.7
 01AD:  BSF    03.5
 01AE:  BSF    03.6
@@ -185,7 +185,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 01B2:  NOP
 01B3:  BCF    03.5
 01B4:  BCF    03.6
-01B5:  BTFSC  5E.7
+01B5:  BTFSC  66.7
 01B6:  BSF    0B.7
 01B7:  BSF    03.6
 01B8:  RLF    0C,W
@@ -194,24 +194,24 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 01BB:  BTFSC  03.2
 01BC:  GOTO   1D8
 01BD:  BCF    03.6
-01BE:  MOVWF  5B
+01BE:  MOVWF  63
 01BF:  BSF    03.6
 01C0:  MOVF   0D,W
 01C1:  BCF    03.6
-01C2:  MOVWF  5C
+01C2:  MOVWF  64
 01C3:  BSF    03.6
 01C4:  MOVF   0F,W
 01C5:  BCF    03.6
-01C6:  MOVWF  5D
-01C7:  MOVF   5B,W
+01C6:  MOVWF  65
+01C7:  MOVF   63,W
 01C8:  BTFSS  0C.4
 01C9:  GOTO   1C8
 01CA:  MOVWF  19
-01CB:  MOVF   5C,W
+01CB:  MOVF   64,W
 01CC:  BSF    03.6
 01CD:  MOVWF  0D
 01CE:  BCF    03.6
-01CF:  MOVF   5D,W
+01CF:  MOVF   65,W
 01D0:  BSF    03.6
 01D1:  MOVWF  0F
 01D2:  INCF   0D,F
@@ -224,7 +224,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 01D9:  RETURN
 *
 0218:  MOVF   0B,W
-0219:  MOVWF  5C
+0219:  MOVWF  64
 021A:  BCF    0B.7
 021B:  BSF    03.5
 021C:  BSF    03.6
@@ -234,7 +234,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0220:  NOP
 0221:  BCF    03.5
 0222:  BCF    03.6
-0223:  BTFSC  5C.7
+0223:  BTFSC  64.7
 0224:  BSF    0B.7
 0225:  BTFSC  03.0
 0226:  GOTO   24F
@@ -242,28 +242,28 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0228:  MOVF   0C,W
 0229:  ANDLW  7F
 022A:  BCF    03.6
-022B:  MOVWF  5C
+022B:  MOVWF  64
 022C:  BSF    03.6
 022D:  MOVF   0D,W
 022E:  BCF    03.6
-022F:  MOVWF  5D
+022F:  MOVWF  65
 0230:  BSF    03.6
 0231:  MOVF   0F,W
 0232:  BCF    03.6
-0233:  MOVWF  5E
-0234:  MOVF   5C,W
-0235:  MOVWF  5F
+0233:  MOVWF  66
+0234:  MOVF   64,W
+0235:  MOVWF  67
 0236:  CALL   1EC
-0237:  MOVF   5D,W
+0237:  MOVF   65,W
 0238:  BSF    03.6
 0239:  MOVWF  0D
 023A:  BCF    03.6
-023B:  MOVF   5E,W
+023B:  MOVF   66,W
 023C:  BSF    03.6
 023D:  MOVWF  0F
 023E:  BCF    03.6
 023F:  MOVF   0B,W
-0240:  MOVWF  5F
+0240:  MOVWF  67
 0241:  BCF    0B.7
 0242:  BSF    03.5
 0243:  BSF    03.6
@@ -273,9 +273,9 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0247:  NOP
 0248:  BCF    03.5
 0249:  BCF    03.6
-024A:  BTFSC  5F.7
+024A:  BTFSC  67.7
 024B:  BSF    0B.7
-024C:  DECFSZ 5B,F
+024C:  DECFSZ 63,F
 024D:  GOTO   24F
 024E:  GOTO   26E
 024F:  BSF    03.6
@@ -283,23 +283,23 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0251:  RLF    0E,W
 0252:  ANDLW  7F
 0253:  BCF    03.6
-0254:  MOVWF  5C
+0254:  MOVWF  64
 0255:  BSF    03.6
 0256:  MOVF   0D,W
 0257:  BCF    03.6
-0258:  MOVWF  5D
+0258:  MOVWF  65
 0259:  BSF    03.6
 025A:  MOVF   0F,W
 025B:  BCF    03.6
-025C:  MOVWF  5E
-025D:  MOVF   5C,W
-025E:  MOVWF  5F
+025C:  MOVWF  66
+025D:  MOVF   64,W
+025E:  MOVWF  67
 025F:  CALL   1EC
-0260:  MOVF   5D,W
+0260:  MOVF   65,W
 0261:  BSF    03.6
 0262:  MOVWF  0D
 0263:  BCF    03.6
-0264:  MOVF   5E,W
+0264:  MOVF   66,W
 0265:  BSF    03.6
 0266:  MOVWF  0F
 0267:  INCF   0D,F
@@ -307,217 +307,217 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0269:  INCF   0F,F
 026A:  BCF    03.0
 026B:  BCF    03.6
-026C:  DECFSZ 5B,F
+026C:  DECFSZ 63,F
 026D:  GOTO   218
 026E:  BCF    0A.3
 026F:  BCF    0A.4
-0270:  GOTO   41C (RETURN)
-0271:  MOVF   64,W
+0270:  GOTO   412 (RETURN)
+0271:  MOVF   6C,W
 0272:  CLRF   78
-0273:  SUBWF  63,W
+0273:  SUBWF  6B,W
 0274:  BTFSC  03.0
 0275:  GOTO   279
-0276:  MOVF   63,W
+0276:  MOVF   6B,W
 0277:  MOVWF  77
 0278:  GOTO   285
 0279:  CLRF   77
 027A:  MOVLW  08
-027B:  MOVWF  65
-027C:  RLF    63,F
+027B:  MOVWF  6D
+027C:  RLF    6B,F
 027D:  RLF    77,F
-027E:  MOVF   64,W
+027E:  MOVF   6C,W
 027F:  SUBWF  77,W
 0280:  BTFSC  03.0
 0281:  MOVWF  77
 0282:  RLF    78,F
-0283:  DECFSZ 65,F
+0283:  DECFSZ 6D,F
 0284:  GOTO   27C
 0285:  RETURN
 0286:  MOVF   78,W
-0287:  MOVF   5B,W
-0288:  MOVWF  63
+0287:  MOVF   63,W
+0288:  MOVWF  6B
 0289:  MOVLW  64
-028A:  MOVWF  64
+028A:  MOVWF  6C
 028B:  CALL   271
 028C:  MOVF   77,W
-028D:  MOVWF  5B
+028D:  MOVWF  63
 028E:  MOVF   78,W
 028F:  MOVLW  30
 0290:  BTFSS  03.2
 0291:  GOTO   299
-0292:  BTFSS  5C.1
+0292:  BTFSS  64.1
 0293:  GOTO   2A0
-0294:  BTFSC  5C.3
+0294:  BTFSC  64.3
 0295:  GOTO   2A0
-0296:  BTFSC  5C.4
+0296:  BTFSC  64.4
 0297:  MOVLW  20
 0298:  GOTO   29C
-0299:  BCF    5C.3
-029A:  BCF    5C.4
-029B:  BSF    5C.0
+0299:  BCF    64.3
+029A:  BCF    64.4
+029B:  BSF    64.0
 029C:  ADDWF  78,F
 029D:  MOVF   78,W
-029E:  MOVWF  5F
+029E:  MOVWF  67
 029F:  CALL   1EC
-02A0:  MOVF   5B,W
-02A1:  MOVWF  63
+02A0:  MOVF   63,W
+02A1:  MOVWF  6B
 02A2:  MOVLW  0A
-02A3:  MOVWF  64
+02A3:  MOVWF  6C
 02A4:  CALL   271
 02A5:  MOVF   77,W
-02A6:  MOVWF  5B
+02A6:  MOVWF  63
 02A7:  MOVF   78,W
 02A8:  MOVLW  30
 02A9:  BTFSS  03.2
 02AA:  GOTO   2B1
-02AB:  BTFSC  5C.3
+02AB:  BTFSC  64.3
 02AC:  GOTO   2B5
-02AD:  BTFSS  5C.0
+02AD:  BTFSS  64.0
 02AE:  GOTO   2B5
-02AF:  BTFSC  5C.4
+02AF:  BTFSC  64.4
 02B0:  MOVLW  20
 02B1:  ADDWF  78,F
 02B2:  MOVF   78,W
-02B3:  MOVWF  5F
+02B3:  MOVWF  67
 02B4:  CALL   1EC
 02B5:  MOVLW  30
-02B6:  ADDWF  5B,F
-02B7:  MOVF   5B,W
-02B8:  MOVWF  5F
+02B6:  ADDWF  63,F
+02B7:  MOVF   63,W
+02B8:  MOVWF  67
 02B9:  CALL   1EC
 02BA:  BCF    0A.3
 02BB:  BCF    0A.4
-02BC:  GOTO   421 (RETURN)
+02BC:  GOTO   417 (RETURN)
 02BD:  CLRF   77
 02BE:  CLRF   78
-02BF:  MOVF   5D,W
+02BF:  MOVF   65,W
 02C0:  BCF    03.0
-02C1:  BTFSC  5E.0
+02C1:  BTFSC  66.0
 02C2:  ADDWF  77,F
 02C3:  RRF    77,F
 02C4:  RRF    78,F
-02C5:  BTFSC  5E.1
+02C5:  BTFSC  66.1
 02C6:  ADDWF  77,F
 02C7:  RRF    77,F
 02C8:  RRF    78,F
-02C9:  BTFSC  5E.2
+02C9:  BTFSC  66.2
 02CA:  ADDWF  77,F
 02CB:  RRF    77,F
 02CC:  RRF    78,F
-02CD:  BTFSC  5E.3
+02CD:  BTFSC  66.3
 02CE:  ADDWF  77,F
 02CF:  RRF    77,F
 02D0:  RRF    78,F
-02D1:  BTFSC  5E.4
+02D1:  BTFSC  66.4
 02D2:  ADDWF  77,F
 02D3:  RRF    77,F
 02D4:  RRF    78,F
-02D5:  BTFSC  5E.5
+02D5:  BTFSC  66.5
 02D6:  ADDWF  77,F
 02D7:  RRF    77,F
 02D8:  RRF    78,F
-02D9:  BTFSC  5E.6
+02D9:  BTFSC  66.6
 02DA:  ADDWF  77,F
 02DB:  RRF    77,F
 02DC:  RRF    78,F
-02DD:  BTFSC  5E.7
+02DD:  BTFSC  66.7
 02DE:  ADDWF  77,F
 02DF:  RRF    77,F
 02E0:  RRF    78,F
 02E1:  RETURN
 02E2:  MOVLW  20
-02E3:  BTFSS  5E.4
+02E3:  BTFSS  66.4
 02E4:  MOVLW  30
-02E5:  MOVWF  5F
-02E6:  MOVF   5D,W
+02E5:  MOVWF  67
+02E6:  MOVF   65,W
 02E7:  MOVWF  77
-02E8:  BTFSS  5D.7
+02E8:  BTFSS  65.7
 02E9:  GOTO   2F2
 02EA:  COMF   77,F
 02EB:  INCF   77,F
 02EC:  MOVF   77,W
-02ED:  MOVWF  5D
+02ED:  MOVWF  65
 02EE:  MOVLW  2D
-02EF:  MOVWF  5F
-02F0:  BSF    5E.7
-02F1:  BSF    5E.0
-02F2:  MOVF   5D,W
-02F3:  MOVWF  63
+02EF:  MOVWF  67
+02F0:  BSF    66.7
+02F1:  BSF    66.0
+02F2:  MOVF   65,W
+02F3:  MOVWF  6B
 02F4:  MOVLW  64
-02F5:  MOVWF  64
+02F5:  MOVWF  6C
 02F6:  CALL   271
 02F7:  MOVF   77,W
-02F8:  MOVWF  5D
+02F8:  MOVWF  65
 02F9:  MOVLW  30
 02FA:  ADDWF  78,W
-02FB:  MOVWF  60
-02FC:  MOVF   5D,W
-02FD:  MOVWF  63
+02FB:  MOVWF  68
+02FC:  MOVF   65,W
+02FD:  MOVWF  6B
 02FE:  MOVLW  0A
-02FF:  MOVWF  64
+02FF:  MOVWF  6C
 0300:  CALL   271
 0301:  MOVLW  30
 0302:  ADDWF  77,W
-0303:  MOVWF  62
+0303:  MOVWF  6A
 0304:  MOVLW  30
 0305:  ADDWF  78,W
-0306:  MOVWF  61
-0307:  MOVF   5F,W
+0306:  MOVWF  69
+0307:  MOVF   67,W
 0308:  MOVWF  77
 0309:  MOVLW  30
-030A:  SUBWF  60,W
+030A:  SUBWF  68,W
 030B:  BTFSC  03.2
 030C:  GOTO   311
-030D:  BSF    5E.1
-030E:  BTFSC  5E.7
-030F:  BSF    5E.2
+030D:  BSF    66.1
+030E:  BTFSC  66.7
+030F:  BSF    66.2
 0310:  GOTO   325
-0311:  MOVF   5F,W
-0312:  MOVWF  60
+0311:  MOVF   67,W
+0312:  MOVWF  68
 0313:  MOVLW  20
-0314:  MOVWF  5F
+0314:  MOVWF  67
 0315:  MOVLW  30
-0316:  SUBWF  61,W
+0316:  SUBWF  69,W
 0317:  BTFSC  03.2
 0318:  GOTO   31D
-0319:  BSF    5E.0
-031A:  BTFSC  5E.7
-031B:  BSF    5E.1
+0319:  BSF    66.0
+031A:  BTFSC  66.7
+031B:  BSF    66.1
 031C:  GOTO   325
 031D:  BTFSS  03.2
-031E:  BSF    5E.0
+031E:  BSF    66.0
 031F:  BTFSS  03.2
 0320:  GOTO   325
-0321:  MOVF   60,W
-0322:  MOVWF  61
+0321:  MOVF   68,W
+0322:  MOVWF  69
 0323:  MOVLW  20
-0324:  MOVWF  60
-0325:  BTFSC  5E.2
+0324:  MOVWF  68
+0325:  BTFSC  66.2
 0326:  GOTO   32C
-0327:  BTFSC  5E.1
+0327:  BTFSC  66.1
 0328:  GOTO   330
-0329:  BTFSC  5E.0
+0329:  BTFSC  66.0
 032A:  GOTO   334
 032B:  GOTO   338
-032C:  MOVF   5F,W
+032C:  MOVF   67,W
 032D:  BTFSS  0C.4
 032E:  GOTO   32D
 032F:  MOVWF  19
-0330:  MOVF   60,W
+0330:  MOVF   68,W
 0331:  BTFSS  0C.4
 0332:  GOTO   331
 0333:  MOVWF  19
-0334:  MOVF   61,W
+0334:  MOVF   69,W
 0335:  BTFSS  0C.4
 0336:  GOTO   335
 0337:  MOVWF  19
-0338:  MOVF   62,W
+0338:  MOVF   6A,W
 0339:  BTFSS  0C.4
 033A:  GOTO   339
 033B:  MOVWF  19
 033C:  RETURN
 033D:  MOVF   0B,W
-033E:  MOVWF  5E
+033E:  MOVWF  66
 033F:  BCF    0B.7
 0340:  BSF    03.5
 0341:  BSF    03.6
@@ -527,7 +527,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0345:  NOP
 0346:  BCF    03.5
 0347:  BCF    03.6
-0348:  BTFSC  5E.7
+0348:  BTFSC  66.7
 0349:  BSF    0B.7
 034A:  BTFSC  03.0
 034B:  GOTO   375
@@ -535,29 +535,29 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 034D:  MOVF   0C,W
 034E:  ANDLW  7F
 034F:  BCF    03.6
-0350:  MOVWF  5E
+0350:  MOVWF  66
 0351:  BSF    03.6
 0352:  MOVF   0D,W
 0353:  BCF    03.6
-0354:  MOVWF  5F
+0354:  MOVWF  67
 0355:  BSF    03.6
 0356:  MOVF   0F,W
 0357:  BCF    03.6
-0358:  MOVWF  60
-0359:  MOVF   5E,W
+0358:  MOVWF  68
+0359:  MOVF   66,W
 035A:  BTFSS  0C.4
 035B:  GOTO   35A
 035C:  MOVWF  19
-035D:  MOVF   5F,W
+035D:  MOVF   67,W
 035E:  BSF    03.6
 035F:  MOVWF  0D
 0360:  BCF    03.6
-0361:  MOVF   60,W
+0361:  MOVF   68,W
 0362:  BSF    03.6
 0363:  MOVWF  0F
 0364:  BCF    03.6
 0365:  MOVF   0B,W
-0366:  MOVWF  61
+0366:  MOVWF  69
 0367:  BCF    0B.7
 0368:  BSF    03.5
 0369:  BSF    03.6
@@ -567,9 +567,9 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 036D:  NOP
 036E:  BCF    03.5
 036F:  BCF    03.6
-0370:  BTFSC  61.7
+0370:  BTFSC  69.7
 0371:  BSF    0B.7
-0372:  DECFSZ 5D,F
+0372:  DECFSZ 65,F
 0373:  GOTO   375
 0374:  GOTO   395
 0375:  BSF    03.6
@@ -577,24 +577,24 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0377:  RLF    0E,W
 0378:  ANDLW  7F
 0379:  BCF    03.6
-037A:  MOVWF  5E
+037A:  MOVWF  66
 037B:  BSF    03.6
 037C:  MOVF   0D,W
 037D:  BCF    03.6
-037E:  MOVWF  5F
+037E:  MOVWF  67
 037F:  BSF    03.6
 0380:  MOVF   0F,W
 0381:  BCF    03.6
-0382:  MOVWF  60
-0383:  MOVF   5E,W
+0382:  MOVWF  68
+0383:  MOVF   66,W
 0384:  BTFSS  0C.4
 0385:  GOTO   384
 0386:  MOVWF  19
-0387:  MOVF   5F,W
+0387:  MOVF   67,W
 0388:  BSF    03.6
 0389:  MOVWF  0D
 038A:  BCF    03.6
-038B:  MOVF   60,W
+038B:  MOVF   68,W
 038C:  BSF    03.6
 038D:  MOVWF  0F
 038E:  INCF   0D,F
@@ -602,11 +602,11 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0390:  INCF   0F,F
 0391:  BCF    03.0
 0392:  BCF    03.6
-0393:  DECFSZ 5D,F
+0393:  DECFSZ 65,F
 0394:  GOTO   33D
 0395:  BCF    0A.3
 0396:  BCF    0A.4
-0397:  GOTO   5B6 (RETURN)
+0397:  GOTO   5C1 (RETURN)
 ....................  
 .................... #list 
 ....................  
@@ -629,7 +629,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................  
 .................... #use delay(clock=8M) 
 *
-006F:  MOVLW  60
+006F:  MOVLW  68
 0070:  MOVWF  04
 0071:  BCF    03.7
 0072:  MOVF   00,W
@@ -651,770 +651,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0082:  RETURN
 ....................  
 .................... #use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8) 
-.................... #include <time.h> 
-.................... ///////////////////////////////////////////////////////////////////////////// 
-.................... ///                                                                       /// 
-.................... ///                               time.h                                  /// 
-.................... ///                                                                       /// 
-.................... /// Time algorithms.  This follows the standard C API, with the following /// 
-.................... /// exceptions:                                                           /// 
-.................... ///   * ctime() and asctime() have another optional input parameter which /// 
-.................... ///     is the pointer to where to save the result string.                /// 
-.................... ///     Normally ctime() and asctime() write the output to a globally     /// 
-.................... ///     allocated string and return a pointer to this string.  By using   /// 
-.................... ///     this optional extra function parameter, you can store the         /// 
-.................... ///     result string into a specified location.                          /// 
-.................... ///   * The output string of ctime() and asctime() are not statically     /// 
-.................... ///     allocated.  That means any other code that runs after ctime()     /// 
-.................... ///     or asctime() can corrupt the result value.  Either perform        /// 
-.................... ///     a string copy of the result into a new location, or use the       /// 
-.................... ///     optional parameter of these functions to store the result         /// 
-....................  
-.................... ///   * strftime() is not supported.                                      /// 
-.................... ///   * SetTime() is added that initializes/set the current time.         /// 
-.................... ///   * GetTime() is added so you can read directly into a struct_tm,     /// 
-.................... ///      instead of having to use localtime(time()) which is usually      /// 
-.................... ///       innefecient.                                                    /// 
-.................... ///   * TimeInit() added for any real time clock devices that may need    /// 
-.................... ///      to be initialized first.                                         /// 
-.................... ///   * Not all timebases have a tick system, so it's not recommended     /// 
-.................... ///      to use clock().  If you need clock(), look at CCS's              /// 
-.................... ///      #use timer() library.                                            /// 
-.................... ///   * Added timeasc(), which converts a string to a time_t.  It is      /// 
-.................... ///      basically the reverse of asctime().  Returns TRUE if successful  /// 
-.................... ///      conversion, FALSE if not because format is wrong.                /// 
-.................... ///   * Added TIME_T_USES_2010.  Normally time_t is number of seconds     /// 
-.................... ///      since January 1 1970.  However, if time_t is a 32bit number this /// 
-.................... ///      value will rollover sometime in 2032.  If TIME_T_USES_2010 is    /// 
-.................... ///      defined then time_t is number of seconds since January 1 2010,   /// 
-.................... ///      and a 32bit time_t won't rollover until 2072.   Most modern      /// 
-.................... ///      operating systems (like Windows and Linux) uses a 64bit time_t   /// 
-.................... ///      so they aren't effected.  If you are interfacing with another    /// 
-.................... ///      system that uses a normal time_t, then that system will need to  /// 
-.................... ///      add 1262304000 to the value coming from this library.            /// 
-.................... ///      To enable this feature, then #define TIME_T_USES_2010            /// 
-.................... ///                                                                       /// 
-.................... /// This file only provides the prototypes and definitions needed to      /// 
-.................... /// proved a time alogrithm that follows the C standard library.  You     /// 
-.................... /// also need to include/link the actual library that performs the time   /// 
-.................... /// base.  As of this writing CCS provides the following compatible       /// 
-.................... /// timebase libraries:                                                   /// 
-.................... ///      rtcperipheral.c - for PICs with internal real time clock.        /// 
-.................... ///      ds1305.c - external DS1305 real time clock.                      /// 
-.................... ///      rtcticks.c - Use a PIC's timer with CCS #use timer() library.    /// 
-.................... ///                                                                       /// 
-.................... /// API:                                                                  /// 
-.................... ///                                                                       /// 
-.................... /// Variable definitions:                                                 /// 
-.................... ///   c - clock timer (clock_t), number of ticks since powerup.  See      /// 
-.................... ///       CLOCKS_PER_SECOND to determine clock rate.                      /// 
-.................... ///                                                                       /// 
-.................... ///   t - second timer (time_t), number of seconds since Jan 1st, 1970.   /// 
-.................... ///                                                                       /// 
-.................... ///   ts - time struct (struct_tm), a structure that holds time in        /// 
-.................... ///        descriptive format (seconds, minutes, hours, day, month, etc). /// 
-.................... ///                                                                       /// 
-.................... /// CLOCKS_PER_SECOND - This is a constant which needs to be defined that /// 
-.................... ///   configures the timebase used by the clock timer and clock().        /// 
-.................... ///   If you are not using clock() then you don't need to define this.    /// 
-.................... ///   If you are using a method such a PIC's timer for the timebase then  /// 
-.................... ///   you will need to set this.                                          /// 
-.................... ///                                                                       /// 
-.................... /// c = clock() - Return current clock timer.                             /// 
-.................... ///                                                                       /// 
-.................... /// t = time(*t) - Return current second timer.  Returns twice (as a      /// 
-.................... ///         a return, and saves to input pointer).                        /// 
-.................... ///                                                                       /// 
-.................... /// SetTime(*tm) - Initializes the current time with a struct_tm          /// 
-.................... ///                                                                       /// 
-.................... /// SetTimeSec(t) - Initializes the current time with a seconds time      /// 
-.................... ///                                                                       /// 
-.................... /// t = mktime(*tm) - Converts a time struct to a second timer.           /// 
-.................... ///                                                                       /// 
-.................... /// t = difftime(t,t) - Returns difference between two second timers.     /// 
-.................... ///                                                                       /// 
-.................... /// *char = ctime(*t, *char) - Converts second timer to a readable string /// 
-.................... ///                            Www Mmm dd hh:mm:ss yyyy                   /// 
-.................... ///                                                                       /// 
-.................... /// *char = asctime(*ts, *char) - Converts time struct to a readable      /// 
-.................... ///                            string.                                    /// 
-.................... ///                            Www Mmm dd hh:mm:ss yyyy                   /// 
-.................... ///                                                                       /// 
-.................... /// *ts = localtime(*t) - Converts second timer to a time struct.         /// 
-.................... ///                  *ts points to a global time struct and will be       /// 
-.................... ///                  corrupted in future calls to localtime().            /// 
-.................... ///                                                                       /// 
-.................... /// GetTime(*tm) - Returns the current time as a time struct              /// 
-.................... ///                                                                       /// 
-.................... /// TimeInit() - Initializes the timing device                            /// 
-.................... ///                                                                       /// 
-.................... /////////////////////////////////////////////////////////////////////////// 
-.................... ///                                                                     /// 
-.................... /// VERSION HISTORY                                                     /// 
-.................... ///                                                                     /// 
-.................... /// June 9 2015:                                                        /// 
-.................... ///   Fixed the struct_tm typedef so 'struct tm' would be legal         /// 
-.................... ///      syntax.                                                        /// 
-.................... ///   The parameters that CCS added to asctime() and ctime() are now    /// 
-.................... ///      optional.                                                      /// 
-.................... ///   Fixed a bug where tm_mday was sometimes off by 1 day.             /// 
-.................... ///                                                                     /// 
-.................... /// September 25 2014:                                                  /// 
-.................... ///   Cleaned up documentation.                                         /// 
-.................... ///   Added timeasc().                                                  /// 
-.................... ///   Added TIME_T_USES_2010 compile time option.                       /// 
-.................... ///                                                                     /// 
-.................... /////////////////////////////////////////////////////////////////////////// 
-.................... ////        (C) Copyright 1996,2011 Custom Computer Services           //// 
-.................... //// This source code may only be used by licensed users of the CCS    //// 
-.................... //// C compiler.  This source code may only be distributed to other    //// 
-.................... //// licensed users of the CCS C compiler.  No other use,              //// 
-.................... //// reproduction or distribution is permitted without written         //// 
-.................... //// permission.  Derivative programs created using this software      //// 
-.................... //// in object code form are not restricted in any way.                //// 
-.................... /////////////////////////////////////////////////////////////////////////// 
-....................  
-.................... #ifndef __TIME_H__ 
-.................... #define __TIME_H__ 
-....................  
-.................... #include <stdlibm.h> 
-.................... /////////////////////////////////////////////////////////////////////////// 
-.................... ////        (C) Copyright 1996,2011 Custom Computer Services           //// 
-.................... //// This source code may only be used by licensed users of the CCS C  //// 
-.................... //// compiler.  This source code may only be distributed to other      //// 
-.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
-.................... //// or distribution is permitted without written permission.          //// 
-.................... //// Derivative programs created using this software in object code    //// 
-.................... //// form are not restricted in any way.                               //// 
-.................... /////////////////////////////////////////////////////////////////////////// 
-....................  
-....................  
-.................... /*********************************************************************/ 
-.................... #ifndef _STDLIBM 
-.................... #define _STDLIBM 
-....................  
-.................... /* Memory Management Functions*/ 
-.................... #include <stddef.h> 
-.................... /////////////////////////////////////////////////////////////////////////// 
-.................... ////        (C) Copyright 1996,2003 Custom Computer Services           //// 
-.................... //// This source code may only be used by licensed users of the CCS C  //// 
-.................... //// compiler.  This source code may only be distributed to other      //// 
-.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
-.................... //// or distribution is permitted without written permission.          //// 
-.................... //// Derivative programs created using this software in object code    //// 
-.................... //// form are not restricted in any way.                               //// 
-.................... /////////////////////////////////////////////////////////////////////////// 
-....................  
-.................... #ifndef _STDDEF 
-....................  
-.................... #define _STDDEF 
-....................  
-.................... #if sizeof(unsigned int8 *)==1 
-.................... #define ptrdiff_t unsigned int8 
-.................... #else 
-.................... #define ptrdiff_t unsigned int16 
-.................... #endif 
-....................  
-.................... #if defined(__PCB__) || defined(__PCM__) 
-.................... #define size_t unsigned int8 
-.................... #else 
-.................... #define size_t unsigned int16 
-.................... #endif 
-.................... #define wchar_t char 
-.................... #define NULL 0 
-....................  
-.................... #define offsetof(s,f) (offsetofbit(s,f)/8) 
-....................  
-.................... #endif 
-....................  
-.................... #if defined(__PCB__) 
-.................... typedef struct nodet { 
-....................    unsigned int8 size; 
-....................    unsigned int8 next; }node_t; 
-.................... #elif defined(__PCM__) 
-.................... typedef struct nodet { 
-....................    unsigned int8 size; 
-....................    unsigned int16 next; }node_t; 
-.................... #elif defined(__PCH__) 
-.................... typedef struct nodet { 
-....................    unsigned int16 size; 
-....................    unsigned int16 next; }node_t; 
-.................... #elif defined(__PCD__) 
-.................... typedef struct nodet { 
-....................    unsigned int16 size; 
-....................    unsigned int16 next; }node_t; 
-.................... #endif 
-....................  
-.................... #if !defined(STDLIBM_MANUAL_DYNAMIC_MEMORY) 
-....................    #USE DYNAMIC_MEMORY 
-.................... #endif 
-....................  
-.................... #ifndef debug_stdlibm 
-....................    #define debug_stdlibm(s) 
-.................... #else 
-....................    #define __DO_DEBUG_STDLIBM 
-....................     
-....................    char g_DebugStdlibmStr[50]; 
-....................     
-....................    #if defined(__PCD__) 
-....................       #if (defined(__PIC24E__)||defined(__dsPIC33E__)) 
-....................          #define INVALID_MEMORY_LOCATION(x) ((x >= (getenv("RAM")+0x800)) || bit_test(x, 0)) 
-....................       #else 
-....................          #define INVALID_MEMORY_LOCATION(x) ((x >= (getenv("RAM")+0x1000)) || bit_test(x, 0)) 
-....................       #endif 
-....................    #else 
-....................       #define INVALID_MEMORY_LOCATION(x) (x >= getenv("RAM")) 
-....................    #endif 
-.................... #endif 
-....................  
-.................... #if defined(STDLIBM_TRACK_WORST_CASE) 
-....................    static size_t _g_StdlibmCurrentBytesUsed = 0; 
-....................    static size_t _g_StdlibmWorstCaseBytesUsed = 0; 
-....................     
-....................    #define _STDLIBM_TRACK_WORST_INC(_x) \ 
-....................    do {  \ 
-....................       _g_StdlibmCurrentBytesUsed += _x;   \ 
-....................       if (_g_StdlibmCurrentBytesUsed > _g_StdlibmWorstCaseBytesUsed) \ 
-....................          _g_StdlibmWorstCaseBytesUsed = _g_StdlibmCurrentBytesUsed;  \ 
-....................    } while(0) 
-....................     
-....................    #define _STDLIBM_TRACK_WORST_DEC(_x) _g_StdlibmCurrentBytesUsed-=_x 
-.................... #else 
-....................    #define _STDLIBM_TRACK_WORST_INC(_x) 
-....................    #define _STDLIBM_TRACK_WORST_DEC(_x) 
-.................... #endif 
-....................  
-.................... #include <memmgmt.c> 
-.................... /////////////////////////////////////////////////////////////////////////// 
-.................... ////        (C) Copyright 1996,2003 Custom Computer Services           //// 
-.................... //// This source code may only be used by licensed users of the CCS C  //// 
-.................... //// compiler.  This source code may only be distributed to other      //// 
-.................... //// licensed users of the CCS C compiler.  No other use, reproduction //// 
-.................... //// or distribution is permitted without written permission.          //// 
-.................... //// Derivative programs created using this software in object code    //// 
-.................... //// form are not restricted in any way.                               //// 
-.................... /////////////////////////////////////////////////////////////////////////// 
-....................  
-.................... #if defined(__PCH__) 
-....................  #define _MEMMGMT_CSIZE 32768 
-....................  #define _MEMMGMT_POS 15 
-.................... #elif defined(__PCD__) 
-....................    #define _MEMMGMT_CSIZE 32768 
-....................    #define _MEMMGMT_POS 15 
-.................... #else 
-....................    #define _MEMMGMT_CSIZE 127 
-....................    #define _MEMMGMT_POS 7 
-.................... #endif 
-....................  
-.................... node_t * create_node(unsigned int16 size, node_t *ptr) // create node at given location 
-.................... { 
-....................    node_t *result; 
-....................    result =ptr; 
-....................    result->size=size; 
-....................    result->next = NULL; 
-....................    return result; 
-.................... } 
-.................... void update_node(node_t *node, unsigned int16 size) // update the size of given node 
-.................... { 
-....................    node->size=size; 
-.................... } 
-....................  
-.................... /* Insert node immediately after place */ //old,new 
-.................... void insert_node_after(node_t *place, node_t *node)// place the node after another given node 
-.................... { 
-....................     if (place->next==NULL) 
-....................        node->next= NULL; 
-....................     else 
-....................        node->next=place->next; 
-....................     place->next=node; 
-.................... } 
-....................  
-.................... ///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-....................  
-.................... void remove_node(node_t *node) {// remove the given node from the memlist 
-....................    node_t *ptr; 
-....................    for(ptr=__DYNAMIC_HEAD;ptr->next!=node;ptr=ptr->next); 
-....................    ptr->next=node->next; 
-....................    node=NULL; 
-.................... } 
-....................  
-.................... ///////////////////////////////////////////////////////////////////////////////////////////////////////////// 
-....................  
-.................... #if defined(__DO_DEBUG_STDLIBM) 
-.................... void print_list() { // print the current memlist 
-....................     node_t *node; 
-....................     debug_stdlibm("\r\nThe list is \n\r"); 
-....................     for(node = __DYNAMIC_HEAD; node != NULL; node = node->next) 
-....................     { 
-....................         sprintf(g_DebugStdlibmStr, "H:0x%lx S:0x%lx N:0x%lx\n\r", node, node->size, node->next); 
-....................         debug_stdlibm(g_DebugStdlibmStr); 
-....................         if (INVALID_MEMORY_LOCATION(node->next)) 
-....................         { 
-....................            debug_stdlibm("Breaking because of invalid next node\r\n"); 
-....................            break; 
-....................         }    
-....................     } 
-....................     sprintf(g_DebugStdlibmStr, "size of node_t %u\r\n",sizeof(node_t)); 
-....................     debug_stdlibm(g_DebugStdlibmStr); 
-.................... } 
-.................... #endif 
-....................  
-....................  
-....................  
-....................  
-.................... void traverse() 
-.................... { 
-....................    node_t *node,*temp; 
-....................    unsigned int16 nsize,nextsize; 
-....................    node=__DYNAMIC_HEAD; 
-....................    while(node!=NULL) 
-....................    { 
-....................      #if defined(__DO_DEBUG_STDLIBM) 
-....................       if (INVALID_MEMORY_LOCATION(node)) 
-....................       { 
-....................          sprintf(g_DebugStdlibmStr, "traverse() invalid node (0x%LX)\r\n", node); 
-....................          debug_stdlibm(g_DebugStdlibmStr); 
-....................          break; 
-....................       }    
-....................      #endif 
-....................      if(!bit_test(node->size,_MEMMGMT_POS))// node free 
-....................       { 
-....................          nsize=node->size; 
-....................          temp=(unsigned int16)node->next; 
-....................         #if defined(__DO_DEBUG_STDLIBM) 
-....................          if (INVALID_MEMORY_LOCATION(temp)) 
-....................          { 
-....................             sprintf(g_DebugStdlibmStr, "traverse() invalid temp (0x%LX)\r\n", node); 
-....................             debug_stdlibm(g_DebugStdlibmStr); 
-....................             break; 
-....................          } 
-....................         #endif 
-....................          if(!bit_test(temp->size,_MEMMGMT_POS)&& (temp==((unsigned int16)node+nsize+sizeof(node_t))))//next node free and consecutive, so combine 
-....................          { 
-....................             nextsize=temp->size; 
-....................             nsize+=nextsize+sizeof(node_t); 
-....................             remove_node(temp); 
-....................             update_node(node,nsize); 
-....................          } 
-....................          else 
-....................          node=node->next; 
-....................       } 
-....................       else 
-....................       node=node->next; 
-....................    } 
-.................... } 
-....................  
-.................... char *malloc(size_t size) 
-.................... { 
-....................    node_t *node,*new; 
-....................    unsigned int16 nsize; 
-....................    #if defined(__PCD__) 
-....................    if (size % 2) 
-....................       size++; 
-....................    #endif 
-....................    node=__DYNAMIC_HEAD; 
-....................     
-....................   #if defined(__DO_DEBUG_STDLIBM) 
-....................    sprintf(g_DebugStdlibmStr, "malloc() size=%lu ", size); 
-....................    debug_stdlibm(g_DebugStdlibmStr); 
-....................   #endif 
-....................          
-....................    while(node!=NULL) // chk until end of memlist 
-....................    { 
-....................      #if defined(__DO_DEBUG_STDLIBM) 
-....................       if (INVALID_MEMORY_LOCATION(node)) 
-....................       { 
-....................          sprintf(g_DebugStdlibmStr, " invalid node (0x%LX)\r\n", node); 
-....................          debug_stdlibm(g_DebugStdlibmStr); 
-....................          print_list(); 
-....................          return(0); 
-....................       } 
-....................      #endif 
-....................       if(!bit_test(node->size,_MEMMGMT_POS) && node->size >=size) // node is free and > = req size 
-....................       { 
-....................          nsize=node->size;    //nsize = size of the node that "node" being pointed at 
-....................          if(nsize>size +sizeof(node_t)) //node > req size, so split and add new node to memlist 
-....................          { 
-....................             new=create_node(nsize-size-sizeof(node_t),(unsigned int16)node+sizeof(node_t)+size); 
-....................             insert_node_after(node,new); 
-....................             update_node(node,size+_MEMMGMT_CSIZE); 
-....................          } 
-....................          else//not enough space for new node so use original size 
-....................          update_node(node,nsize+_MEMMGMT_CSIZE); 
-....................          //end if 
-....................          break; 
-....................       }//end if 
-....................       node=node->next; 
-....................    }//end while 
-....................    if(node==NULL)// reached end without finding an appropriate node 
-....................    { 
-....................       debug_stdlibm("Not enough memory for mallocation\r\n"); 
-....................       return NULL; 
-....................    } 
-....................    else 
-....................    { 
-....................      #if defined(__DO_DEBUG_STDLIBM) 
-....................       sprintf(g_DebugStdlibmStr, "%LX\r\n", (char *)node+sizeof(node_t)); 
-....................       debug_stdlibm(g_DebugStdlibmStr); 
-....................      #endif 
-....................       _STDLIBM_TRACK_WORST_INC(size); 
-....................       return (char *)node+sizeof(node_t); // return pounsigned int8er to allocated space 
-....................    } 
-.................... } 
-....................  
-.................... char *calloc(size_t nmemb,size_t size) 
-.................... { 
-....................    node_t *node,*new; 
-....................    unsigned int16 nsize,resize; 
-....................    node=__DYNAMIC_HEAD; 
-....................    resize=nmemb*size; 
-....................    #if defined(__PCD__) 
-....................    if(resize%2) 
-....................       resize++; 
-....................    #endif 
-....................    while(node!=NULL) // chk until end of memlist 
-....................    { 
-....................      #if defined(__DO_DEBUG_STDLIBM) 
-....................       if (INVALID_MEMORY_LOCATION(node)) 
-....................       { 
-....................          sprintf(g_DebugStdlibmStr, "malloc() invalid node (0x%LX)\r\n", node); 
-....................          debug_stdlibm(g_DebugStdlibmStr); 
-....................          print_list(); 
-....................          return(0); 
-....................       } 
-....................      #endif 
-....................       if(!bit_test(node->size,_MEMMGMT_POS) && node->size >=resize)// node is free and > = req size 
-....................       { 
-....................          nsize=node->size; 
-....................          if(nsize>resize+sizeof(node_t))//node > req size, so split and add new node to memlist 
-....................          { 
-....................             new=create_node(nsize-resize-sizeof(node_t),(unsigned int16)node+sizeof(node_t)+resize); 
-....................             insert_node_after(node,new); 
-....................             update_node(node,resize+_MEMMGMT_CSIZE); 
-....................          } 
-....................          else//not enough space for new node so use original size 
-....................          update_node(node,nsize+_MEMMGMT_CSIZE); 
-....................          //end if 
-....................          break; 
-....................       }//end if 
-....................       node=node->next; 
-....................    }//end while 
-....................    if(node==NULL)// reached end without finding an appropriate node 
-....................    { 
-....................       debug_stdlibm("Not enough memory for callocation\r\n"); 
-....................       return NULL; 
-....................    } 
-....................    else 
-....................    { 
-....................       memset((unsigned int16)node+sizeof(node_t),0,resize);// initialize to 0 
-....................       _STDLIBM_TRACK_WORST_INC(resize); 
-....................       return (char *)(unsigned int16)node+sizeof(node_t);// return pounsigned int8er to allocated space 
-....................    } 
-.................... } 
-.................... void free( void * ptr) 
-.................... { 
-....................    node_t *node; 
-....................    unsigned int16 nsize; 
-....................  
-....................   #if defined(__DO_DEBUG_STDLIBM) 
-....................    sprintf(g_DebugStdlibmStr, "free() 0x%LX\r\n", ptr); 
-....................    debug_stdlibm(g_DebugStdlibmStr); 
-....................   #endif 
-....................  
-....................    if(ptr==NULL) // not a valid pounsigned int8er 
-....................       return; 
-....................    else 
-....................    { 
-....................       node=ptr-sizeof(node_t); 
-....................       if(bit_test(node->size,_MEMMGMT_POS))// node occupied 
-....................       { 
-....................          nsize=node->size-_MEMMGMT_CSIZE; 
-....................          update_node(node,nsize); 
-....................          ptr=NULL; 
-....................          _STDLIBM_TRACK_WORST_DEC(nsize); 
-....................       } 
-....................       else // wrong input, return 
-....................       { 
-....................          ptr=NULL; 
-....................          return; 
-....................       } 
-....................    } 
-....................    traverse(); 
-.................... } 
-....................  
-.................... char *realloc(void *ptr,size_t size) 
-.................... { 
-....................    node_t *node,*new,*temp; 
-....................    unsigned int16 nsize,nextsize; 
-....................    char *newptr; 
-....................    #if defined(__PCD__) 
-....................    if(size %2) 
-....................       size++; 
-....................    #endif 
-....................    if(ptr==NULL)// null pounsigned int8er, so malloc the req memory 
-....................       return(malloc(size)); 
-....................    else if(size==0) 
-....................    { 
-....................       free(ptr); 
-....................       return(NULL); 
-....................    } 
-....................    else 
-....................    { 
-....................       node=ptr-sizeof(node_t); 
-....................       if(bit_test(node->size,_MEMMGMT_POS))// chk if valid pounsigned int8er 
-....................       { 
-....................          nsize=node->size-_MEMMGMT_CSIZE; 
-....................          temp=(unsigned int16)node->next; 
-....................          if(nsize>size)// block > req size 
-....................          { 
-....................         
-....................                if(!bit_test(temp->size,_MEMMGMT_POS) && (temp==((unsigned int16)node+nsize+sizeof(node_t))))// next block free and consecutive 
-....................                { 
-....................                   update_node(node,size+_MEMMGMT_CSIZE); // update block 
-....................                   nextsize=temp->size; 
-....................                   remove_node(temp); 
-....................                   new=create_node(nextsize+(nsize-size),(unsigned int16)node+size+sizeof(node_t)); 
-....................                   insert_node_after(node,new); 
-....................                   _STDLIBM_TRACK_WORST_DEC(nsize); 
-....................                   _STDLIBM_TRACK_WORST_INC(size); 
-....................                } 
-....................                else if (nsize>size +sizeof(node_t))//node > req size, so split and add new node to memlist 
-....................                { 
-....................                   update_node(node,size+_MEMMGMT_CSIZE); // update block 
-....................                   new=create_node(nsize-size-sizeof(node_t),(unsigned int16)node+sizeof(node_t)+size); 
-....................                   insert_node_after(node,new); 
-....................                   _STDLIBM_TRACK_WORST_DEC(nsize); 
-....................                   _STDLIBM_TRACK_WORST_INC(size); 
-....................                } 
-....................                else//not enough space for new node so use original size 
-....................                update_node(node,nsize+_MEMMGMT_CSIZE); // update block 
-....................  
-....................          } 
-....................          else // block < req size 
-....................          { 
-....................             if(!bit_test(temp->size,_MEMMGMT_POS) && (temp==((unsigned int16)node+nsize+sizeof(node_t))))// next block free and consecutive 
-....................             { 
-....................                nextsize=temp->size; 
-....................                if(nextsize>=size-nsize) // next block >=difference 
-....................                { 
-....................                   if(nextsize>size-nsize+sizeof(node_t))//next node > req size, so split and add new node to memlist 
-....................                   { 
-....................                       update_node(node,size+_MEMMGMT_CSIZE);// update block 
-....................                       remove_node(temp); 
-....................                       new=create_node(nextsize-(size-nsize),(unsigned int16)node+size+sizeof(node_t)); 
-....................                       insert_node_after(node,new); 
-....................                      _STDLIBM_TRACK_WORST_DEC(nsize); 
-....................                      _STDLIBM_TRACK_WORST_INC(size); 
-....................                   } 
-....................                   else//not enough space for new node in next node, so use original size 
-....................                   { 
-....................                       update_node(node,nsize+nextsize+_MEMMGMT_CSIZE);// update block 
-....................                       remove_node(temp); 
-....................                   } 
-....................                } 
-....................                else  //next block free but too small for new size 
-....................                { 
-....................                   newptr = malloc(size);  //use malloc to find new block 
-....................                   if(newptr == NULL) 
-....................                      return(NULL);        //return NULL if malloc was unable to find new block 
-....................                     
-....................                   memcpy(newptr, ptr, nsize);   //copy original data to new block 
-....................                   free(ptr);                    //free original block 
-....................                   return(newptr);               //return new pointer 
-....................                } 
-....................             } 
-....................             else  //next block not free 
-....................             { 
-....................                newptr = malloc(size);  //use malloc to find new block 
-....................                if(newptr == NULL)       
-....................                   return(NULL);        //return NULL if malloc was unable to find new block 
-....................                 
-....................                memcpy(newptr, ptr, nsize);   //copy original data to new block 
-....................                free(ptr);                    //free original block 
-....................                return(newptr);               //return new pointer 
-....................             } 
-....................          } 
-....................          return (char *)node+sizeof(node_t); // return pounsigned int8er to the reallocated block 
-....................       } 
-....................       else // not allocated use malloc 
-....................       { 
-....................          return(malloc(size)); 
-....................       } 
-....................    } 
-....................  } 
-....................   
-.................... typedef struct 
-.................... { 
-....................    size_t bytesUsed; 
-....................    size_t largestUsedSeg; 
-....................    int segmentsUsed; 
-....................    size_t bytesFree; 
-....................    size_t largestFreeSeg; 
-....................    int segmentsFree; 
-....................   #if defined(STDLIBM_TRACK_WORST_CASE) 
-....................    size_t worstCaseBytesUsed; 
-....................   #endif 
-.................... } heap_status_t; 
-....................  
-.................... void GetHeapStatus(heap_status_t *pHeapStatus) 
-.................... { 
-....................    heap_status_t status; 
-....................    node_t *node; 
-....................    unsigned int16 nsize; 
-....................     
-....................    node=__DYNAMIC_HEAD; 
-....................     
-....................    memset(&status, 0, sizeof(status)); 
-....................  
-....................    while(node!=NULL) 
-....................    { 
-....................       nsize = node->size; 
-....................       node = node->next; 
-....................        
-....................       if(!bit_test(nsize, _MEMMGMT_POS)) // node free 
-....................       { 
-....................          status.bytesFree += nsize; 
-....................           
-....................          status.segmentsFree++; 
-....................           
-....................          if (nsize > status.largestFreeSeg) 
-....................          { 
-....................             status.largestFreeSeg = nsize; 
-....................          } 
-....................       } 
-....................       else 
-....................       { 
-....................          bit_clear(nsize, _MEMMGMT_POS); 
-....................           
-....................          status.bytesUsed += nsize; 
-....................           
-....................          status.segmentsUsed++; 
-....................           
-....................          if (nsize > status.largestUsedSeg) 
-....................          { 
-....................             status.largestUsedSeg = nsize; 
-....................          } 
-....................       } 
-....................    } 
-....................  
-....................   #if defined(STDLIBM_TRACK_WORST_CASE) 
-....................    status.worstCaseBytesUsed = _g_StdlibmWorstCaseBytesUsed; 
-....................   #endif 
-....................  
-....................    memcpy(pHeapStatus, &status, sizeof(heap_status_t)); 
-.................... } 
-.................... #ENDIF 
-....................  
-....................  
-.................... /* API Types*/ 
-.................... typedef signed int32 time_t; 
-.................... typedef unsigned int32 clock_t; 
-....................  
-.................... typedef enum 
-.................... { 
-....................    SUNDAY = 0, 
-....................    MONDAY, 
-....................    TUESDAY, 
-....................    WEDNESDAY, 
-....................    THURSDAY, 
-....................    FRIDAY, 
-....................    SATURDAY    
-.................... }  Weekday; 
-....................  
-.................... typedef enum 
-.................... { 
-....................    JANUARY = 0, 
-....................    FEBRUARY, 
-....................    MARCH, 
-....................    APRIL, 
-....................    MAY, 
-....................    JUNE, 
-....................    JULY, 
-....................    AUGUST, 
-....................    SEPTEMBER, 
-....................    OCTOBER, 
-....................    NOVEMBER, 
-....................    DECEMBER 
-.................... }  Month; 
-....................  
-.................... typedef struct tm 
-.................... { 
-....................    unsigned int8 tm_sec;   // seconds after the minute (0-59) 
-....................    unsigned int8 tm_min;   // minutes after the hour (0-59) 
-....................    unsigned int8 tm_hour;  // hours since midnight (0-23) 
-....................    unsigned int8 tm_mday;  // day of the month (1-31) 
-....................    Month tm_mon;           // month of the year (0-11) 
-....................    unsigned int16 tm_year; // years since 1900 
-....................    Weekday tm_wday;        // day of the week (0-6) (Sunday=0) 
-....................    unsigned int16 tm_yday; // day of the year (0-365) 
-.................... } struct_tm; 
-....................  
-....................  
-.................... /* returns number of ticks incremented at CLOCKS_PER_SECOND rate.  This 
-....................    function must be provided by the library of your timebase */ 
-.................... clock_t clock(void); 
-....................  
-.................... /* returns time in seconds since January 1 1970 (or January 1 2010 if  
-....................    TIME_T_USES_2010 is being used).  This function must be provided by the 
-....................    library of your timebase.  For example, see CCS's ds1305.c driver. */ 
-.................... time_t time(time_t * timer); 
-....................  
-.................... /* Returns the difference in seconds between two times 
-....................  * Times later and earlier are expressed in seconds  
-....................  */ 
-.................... signed int32 difftime(time_t later, time_t earlier); 
-....................  
-.................... /* Calculates the Unix Time from a standard time format 
-....................  * Returns the Unix Time (time in seconds since Jan 1, 1970 00:00:00) 
-....................  */ 
-.................... time_t mktime(struct_tm * timeT); 
-....................  
-.................... /* Returns the given time as a string of the form:  
-....................  *  Day Mon X HH:MM:SS YYYY\0  
-....................  */ 
-.................... char * asctime(struct_tm * timeptr, char *szTime = 0); 
-....................  
-.................... /* the inverse of asctime().  you can skip the wday portion of the string, and 
-....................    then this function will not populate the tm_wday in pTm.  If you do skip 
-....................    the wday portion of the string, then you can use localtime(mktime()) to 
-....................    populate tm_wday with the correct value based on the date.  if pTm is 
-....................    NULL it won't save result, but function will still return TRUE or FALSE. 
-....................    Function returns TRUE if the format of the input string is valid. */ 
-.................... int1 timeasc(struct_tm *pTm, char *szTime); 
-....................  
-.................... /* Converts the given calendar time (in seconds) to local time 
-....................  * and returns the equivalent string.  
-....................  */ 
-.................... char * ctime(time_t * timer, char *szTime = 0); 
-....................  
-.................... /* Converts the given calendar time (in seconds) to local time 
-....................  * and sets this time in the global g_lTime 
-....................  * Returns a pointer to g_lTime 
-....................  */ 
-.................... struct_tm * localtime ( time_t * timer ); 
-.................... #define gmtime(t) localtime(t) 
-....................  
-.................... /* Set the time of your system.  This function must pe provided by the library 
-....................    of your timebase (see CCS's ds1305.c driver) */ 
-.................... void SetTime(struct_tm * nTime); 
-....................  
-.................... /* Set the time of your system.  This function must pe provided by the library 
-....................    of your timebase (see CCS's ds1305.c driver) */ 
-.................... void SetTimeSec(time_t sTime); 
-....................  
-.................... /* Get the time of your system.  This is similar to the standard time() 
-....................    function, but this returns directly to a struct_tm.  Since most RTC's work 
-....................    with a structure similar to struct_tm, this may be more effecient to use 
-....................    than time().   This function must pe provided by the library of your  
-....................    timebase (see CCS's ds1305.c driver) */ 
-.................... void GetTime(struct_tm *pRetTm); 
-....................  
-.................... /* Initialize your timebase. This function must pe provided by the library of your  
-....................    timebase (see CCS's ds1305.c driver) */ 
-.................... void TimeInit(void); 
-....................  
-.................... #endif 
-....................  
+.................... //#include <time.h> 
 .................... #include<math.h> 
 .................... //////////////////////////////////////////////////////////////////////////// 
 .................... ////        (C) Copyright 1996,2011 Custom Computer Services            //// 
@@ -3885,7 +3122,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 00F6:  BCF    03.5
 00F7:  CALL   0AF
 00F8:  MOVF   78,W
-00F9:  MOVWF  67
+00F9:  MOVWF  6F
 ....................        
 ....................    lcd_output_enable(0); 
 00FA:  BCF    06.2
@@ -3904,7 +3141,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0103:  BCF    03.5
 0104:  CALL   0AF
 0105:  MOVF   78,W
-0106:  MOVWF  66
+0106:  MOVWF  6E
 ....................        
 ....................    lcd_output_enable(0); 
 0107:  BCF    06.2
@@ -3930,12 +3167,12 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................  
 ....................    return( (high<<4) | low); 
 010E:  BCF    03.5
-010F:  SWAPF  67,W
+010F:  SWAPF  6F,W
 0110:  MOVWF  77
 0111:  MOVLW  F0
 0112:  ANDWF  77,F
 0113:  MOVF   77,W
-0114:  IORWF  66,W
+0114:  IORWF  6E,W
 0115:  MOVWF  78
 .................... } 
 ....................  
@@ -3943,7 +3180,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 .................... { 
 ....................   #if (defined(LCD_DATA4) && defined(LCD_DATA5) && defined(LCD_DATA6) && defined(LCD_DATA7)) 
 *
-00AF:  CLRF   68
+00AF:  CLRF   70
 ....................    unsigned int8 n = 0x00; 
 ....................  
 ....................    /* Read the data port */ 
@@ -3954,7 +3191,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 00B3:  BCF    03.5
 00B4:  BTFSC  06.4
 00B5:  MOVLW  01
-00B6:  IORWF  68,F
+00B6:  IORWF  70,F
 ....................    n |= input(LCD_DATA5) << 1; 
 00B7:  BSF    03.5
 00B8:  BSF    06.5
@@ -3966,7 +3203,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 00BE:  BCF    03.0
 00BF:  RLF    77,F
 00C0:  MOVF   77,W
-00C1:  IORWF  68,F
+00C1:  IORWF  70,F
 ....................    n |= input(LCD_DATA6) << 2; 
 00C2:  BSF    03.5
 00C3:  BSF    06.6
@@ -3980,7 +3217,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 00CB:  MOVLW  FC
 00CC:  ANDWF  77,F
 00CD:  MOVF   77,W
-00CE:  IORWF  68,F
+00CE:  IORWF  70,F
 ....................    n |= input(LCD_DATA7) << 3; 
 00CF:  BSF    03.5
 00D0:  BSF    06.7
@@ -3995,10 +3232,10 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 00D9:  MOVLW  F8
 00DA:  ANDWF  77,F
 00DB:  MOVF   77,W
-00DC:  IORWF  68,F
+00DC:  IORWF  70,F
 ....................     
 ....................    return(n); 
-00DD:  MOVF   68,W
+00DD:  MOVF   70,W
 00DE:  MOVWF  78
 ....................   #else 
 00DF:  RETURN
@@ -4012,7 +3249,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................    /* Write to the data port */ 
 ....................    output_bit(LCD_DATA4, bit_test(n, 0)); 
 *
-0083:  BTFSC  67.0
+0083:  BTFSC  6F.0
 0084:  GOTO   087
 0085:  BCF    06.4
 0086:  GOTO   088
@@ -4021,7 +3258,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0089:  BCF    06.4
 ....................    output_bit(LCD_DATA5, bit_test(n, 1)); 
 008A:  BCF    03.5
-008B:  BTFSC  67.1
+008B:  BTFSC  6F.1
 008C:  GOTO   08F
 008D:  BCF    06.5
 008E:  GOTO   090
@@ -4030,7 +3267,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0091:  BCF    06.5
 ....................    output_bit(LCD_DATA6, bit_test(n, 2)); 
 0092:  BCF    03.5
-0093:  BTFSC  67.2
+0093:  BTFSC  6F.2
 0094:  GOTO   097
 0095:  BCF    06.6
 0096:  GOTO   098
@@ -4039,7 +3276,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 0099:  BCF    06.6
 ....................    output_bit(LCD_DATA7, bit_test(n, 3)); 
 009A:  BCF    03.5
-009B:  BTFSC  67.3
+009B:  BTFSC  6F.3
 009C:  GOTO   09F
 009D:  BCF    06.7
 009E:  GOTO   0A0
@@ -4092,13 +3329,13 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................    while ( bit_test(lcd_read_byte(),7) ) ; 
 *
 0116:  MOVF   78,W
-0117:  MOVWF  66
-0118:  BTFSS  66.7
+0117:  MOVWF  6E
+0118:  BTFSS  6E.7
 0119:  GOTO   11C
 011A:  BSF    03.5
 011B:  GOTO   0E8
 ....................    lcd_output_rs(address); 
-011C:  MOVF   64,F
+011C:  MOVF   6C,F
 011D:  BTFSS  03.2
 011E:  GOTO   121
 011F:  BCF    06.3
@@ -4122,18 +3359,18 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 012D:  BCF    06.2
 ....................    lcd_send_nibble(n >> 4); 
 012E:  BCF    03.5
-012F:  SWAPF  65,W
-0130:  MOVWF  66
+012F:  SWAPF  6D,W
+0130:  MOVWF  6E
 0131:  MOVLW  0F
-0132:  ANDWF  66,F
-0133:  MOVF   66,W
-0134:  MOVWF  67
+0132:  ANDWF  6E,F
+0133:  MOVF   6E,W
+0134:  MOVWF  6F
 0135:  CALL   083
 ....................    lcd_send_nibble(n & 0xf); 
-0136:  MOVF   65,W
+0136:  MOVF   6D,W
 0137:  ANDLW  0F
-0138:  MOVWF  66
-0139:  MOVWF  67
+0138:  MOVWF  6E
+0139:  MOVWF  6F
 013A:  CALL   083
 013B:  RETURN
 .................... } 
@@ -4147,13 +3384,13 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................    unsigned int8 i; 
 ....................    unsigned int8 LCD_INIT_STRING[4] = {0x20 | (LCD_TYPE << 2), 0xc, 1, 6}; 
 013C:  MOVLW  28
-013D:  MOVWF  5C
+013D:  MOVWF  64
 013E:  MOVLW  0C
-013F:  MOVWF  5D
+013F:  MOVWF  65
 0140:  MOVLW  01
-0141:  MOVWF  5E
+0141:  MOVWF  66
 0142:  MOVLW  06
-0143:  MOVWF  5F
+0143:  MOVWF  67
 ....................                              // These bytes need to be sent to the LCD 
 ....................                              // to start it up. 
 ....................     
@@ -4199,60 +3436,60 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................    delay_ms(15); 
 0156:  MOVLW  0F
 0157:  BCF    03.5
-0158:  MOVWF  60
+0158:  MOVWF  68
 0159:  CALL   06F
 ....................    for(i=1;i<=3;++i) 
 015A:  MOVLW  01
-015B:  MOVWF  5B
-015C:  MOVF   5B,W
+015B:  MOVWF  63
+015C:  MOVF   63,W
 015D:  SUBLW  03
 015E:  BTFSS  03.0
 015F:  GOTO   168
 ....................    { 
 ....................        lcd_send_nibble(3); 
 0160:  MOVLW  03
-0161:  MOVWF  67
+0161:  MOVWF  6F
 0162:  CALL   083
 ....................        delay_ms(5); 
 0163:  MOVLW  05
-0164:  MOVWF  60
+0164:  MOVWF  68
 0165:  CALL   06F
-0166:  INCF   5B,F
+0166:  INCF   63,F
 0167:  GOTO   15C
 ....................    } 
 ....................     
 ....................    lcd_send_nibble(2); 
 0168:  MOVLW  02
-0169:  MOVWF  67
+0169:  MOVWF  6F
 016A:  CALL   083
 ....................    delay_ms(5); 
 016B:  MOVLW  05
-016C:  MOVWF  60
+016C:  MOVWF  68
 016D:  CALL   06F
 ....................    for(i=0;i<=3;++i) 
-016E:  CLRF   5B
-016F:  MOVF   5B,W
+016E:  CLRF   63
+016F:  MOVF   63,W
 0170:  SUBLW  03
 0171:  BTFSS  03.0
 0172:  GOTO   17F
 ....................       lcd_send_byte(0,LCD_INIT_STRING[i]); 
-0173:  MOVLW  5C
-0174:  ADDWF  5B,W
+0173:  MOVLW  64
+0174:  ADDWF  63,W
 0175:  MOVWF  04
 0176:  BCF    03.7
 0177:  MOVF   00,W
-0178:  MOVWF  60
-0179:  CLRF   64
-017A:  MOVF   60,W
-017B:  MOVWF  65
+0178:  MOVWF  68
+0179:  CLRF   6C
+017A:  MOVF   68,W
+017B:  MOVWF  6D
 017C:  CALL   0E0
 ....................  
 ....................   #if defined(LCD_EXTENDED_NEWLINE) 
-017D:  INCF   5B,F
+017D:  INCF   63,F
 017E:  GOTO   16F
 017F:  BCF    0A.3
 0180:  BCF    0A.4
-0181:  GOTO   401 (RETURN)
+0181:  GOTO   3F7 (RETURN)
 ....................    g_LcdX = 0; 
 ....................    g_LcdY = 0; 
 ....................   #endif 
@@ -4264,28 +3501,28 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................     
 ....................    if(y!=1) 
 *
-01DA:  DECFSZ 61,W
+01DA:  DECFSZ 69,W
 01DB:  GOTO   1DD
 01DC:  GOTO   1E0
 ....................       address=LCD_LINE_TWO; 
 01DD:  MOVLW  40
-01DE:  MOVWF  62
+01DE:  MOVWF  6A
 01DF:  GOTO   1E1
 ....................    else 
 ....................       address=0; 
-01E0:  CLRF   62
+01E0:  CLRF   6A
 ....................       
 ....................    address+=x-1; 
 01E1:  MOVLW  01
-01E2:  SUBWF  60,W
-01E3:  ADDWF  62,F
+01E2:  SUBWF  68,W
+01E3:  ADDWF  6A,F
 ....................    lcd_send_byte(0,0x80|address); 
-01E4:  MOVF   62,W
+01E4:  MOVF   6A,W
 01E5:  IORLW  80
-01E6:  MOVWF  63
-01E7:  CLRF   64
-01E8:  MOVF   63,W
-01E9:  MOVWF  65
+01E6:  MOVWF  6B
+01E7:  CLRF   6C
+01E8:  MOVF   6B,W
+01E9:  MOVWF  6D
 01EA:  CALL   0E0
 ....................  
 ....................   #if defined(LCD_EXTENDED_NEWLINE) 
@@ -4298,7 +3535,7 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 .................... void lcd_putc(char c) 
 .................... { 
 ....................    switch (c) 
-01EC:  MOVF   5F,W
+01EC:  MOVF   67,W
 01ED:  XORLW  07
 01EE:  BTFSC  03.2
 01EF:  GOTO   1FA
@@ -4315,19 +3552,19 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................    { 
 ....................       case '\a'   :  lcd_gotoxy(1,1);     break; 
 01FA:  MOVLW  01
-01FB:  MOVWF  60
-01FC:  MOVWF  61
+01FB:  MOVWF  68
+01FC:  MOVWF  69
 01FD:  CALL   1DA
 01FE:  GOTO   217
 ....................  
 ....................       case '\f'   :  lcd_send_byte(0,1); 
-01FF:  CLRF   64
+01FF:  CLRF   6C
 0200:  MOVLW  01
-0201:  MOVWF  65
+0201:  MOVWF  6D
 0202:  CALL   0E0
 ....................                      delay_ms(2); 
 0203:  MOVLW  02
-0204:  MOVWF  60
+0204:  MOVWF  68
 0205:  CALL   06F
 ....................                     #if defined(LCD_EXTENDED_NEWLINE) 
 ....................                      g_LcdX = 0; 
@@ -4348,17 +3585,17 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................      #else 
 ....................       case '\n'   : lcd_gotoxy(1,2);        break; 
 0207:  MOVLW  01
-0208:  MOVWF  60
+0208:  MOVWF  68
 0209:  MOVLW  02
-020A:  MOVWF  61
+020A:  MOVWF  69
 020B:  CALL   1DA
 020C:  GOTO   217
 ....................      #endif 
 ....................       
 ....................       case '\b'   : lcd_send_byte(0,0x10);  break; 
-020D:  CLRF   64
+020D:  CLRF   6C
 020E:  MOVLW  10
-020F:  MOVWF  65
+020F:  MOVWF  6D
 0210:  CALL   0E0
 0211:  GOTO   217
 ....................       
@@ -4373,9 +3610,9 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................      #else 
 ....................       default     : lcd_send_byte(1,c);     break; 
 0212:  MOVLW  01
-0213:  MOVWF  64
-0214:  MOVF   5F,W
-0215:  MOVWF  65
+0213:  MOVWF  6C
+0214:  MOVF   67,W
+0215:  MOVWF  6D
 0216:  CALL   0E0
 ....................      #endif 
 ....................    } 
@@ -4457,8 +3694,8 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 03A7:  MOVLW  90
 03A8:  BCF    03.5
 03A9:  MOVWF  18
-03AA:  CLRF   23
-03AB:  CLRF   22
+03AA:  CLRF   21
+03AB:  CLRF   20
 03AC:  BSF    03.5
 03AD:  BSF    03.6
 03AE:  MOVF   09,W
@@ -4474,81 +3711,71 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 03B8:  CLRF   07
 03B9:  CLRF   08
 03BA:  CLRF   09
-03BB:  BCF    03.6
-03BC:  CLRF   21
-03BD:  MOVLW  6A
-03BE:  MOVWF  20
-03BF:  MOVLW  0A
-03C0:  MOVWF  6A
-03C1:  CLRF   6C
-03C2:  MOVLW  A0
-03C3:  MOVWF  6B
-03C4:  MOVLW  4D
-03C5:  BSF    03.5
-03C6:  MOVWF  20
-03C7:  MOVLW  01
-03C8:  MOVWF  22
-03C9:  MOVLW  10
-03CA:  MOVWF  21
-03CB:  MOVLW  5D
-03CC:  BCF    03.5
-03CD:  BSF    03.6
-03CE:  MOVWF  10
-03CF:  MOVLW  01
-03D0:  MOVWF  12
-03D1:  MOVLW  90
-03D2:  MOVWF  11
-03D3:  MOVLW  5D
-03D4:  BSF    03.5
-03D5:  MOVWF  10
-03D6:  CLRF   12
-03D7:  CLRF   11
-03D8:  BCF    03.5
-03D9:  BCF    03.6
-03DA:  BCF    03.7
+03BB:  BCF    03.7
 *
-03FB:  MOVLW  D3
-03FC:  MOVWF  44
-03FD:  MOVLW  01
-03FE:  MOVWF  45
-03FF:  CLRF   46
+03F1:  MOVLW  D3
+03F2:  MOVWF  4C
+03F3:  MOVLW  01
+03F4:  MOVWF  4D
+03F5:  CLRF   4E
 .................... {   
-....................     
-....................    int board[n][n] = {0}; 
+....................    int primeNum[10] = {1091,1427,1753,1571,1291,2671,701,373,661,281}; 
 *
-03DB:  CLRF   24
-03DC:  CLRF   25
-03DD:  CLRF   26
-03DE:  CLRF   27
-03DF:  CLRF   28
-03E0:  CLRF   29
-03E1:  CLRF   2A
-03E2:  CLRF   2B
-03E3:  CLRF   2C
-03E4:  CLRF   2D
-03E5:  CLRF   2E
-03E6:  CLRF   2F
-03E7:  CLRF   30
-03E8:  CLRF   31
-03E9:  CLRF   32
-03EA:  CLRF   33
+03BC:  MOVLW  43
+03BD:  BCF    03.6
+03BE:  MOVWF  22
+03BF:  MOVLW  93
+03C0:  MOVWF  23
+03C1:  MOVLW  D9
+03C2:  MOVWF  24
+03C3:  MOVLW  23
+03C4:  MOVWF  25
+03C5:  MOVLW  0B
+03C6:  MOVWF  26
+03C7:  MOVLW  6F
+03C8:  MOVWF  27
+03C9:  MOVLW  BD
+03CA:  MOVWF  28
+03CB:  MOVLW  75
+03CC:  MOVWF  29
+03CD:  MOVLW  95
+03CE:  MOVWF  2A
+03CF:  MOVLW  19
+03D0:  MOVWF  2B
+....................    int board[n][n] = {0}; 
+03D1:  CLRF   2C
+03D2:  CLRF   2D
+03D3:  CLRF   2E
+03D4:  CLRF   2F
+03D5:  CLRF   30
+03D6:  CLRF   31
+03D7:  CLRF   32
+03D8:  CLRF   33
+03D9:  CLRF   34
+03DA:  CLRF   35
+03DB:  CLRF   36
+03DC:  CLRF   37
+03DD:  CLRF   38
+03DE:  CLRF   39
+03DF:  CLRF   3A
+03E0:  CLRF   3B
 ....................    int freePos[n*n]={0}; 
-03EB:  CLRF   34
-03EC:  CLRF   35
-03ED:  CLRF   36
-03EE:  CLRF   37
-03EF:  CLRF   38
-03F0:  CLRF   39
-03F1:  CLRF   3A
-03F2:  CLRF   3B
-03F3:  CLRF   3C
-03F4:  CLRF   3D
-03F5:  CLRF   3E
-03F6:  CLRF   3F
-03F7:  CLRF   40
-03F8:  CLRF   41
-03F9:  CLRF   42
-03FA:  CLRF   43
+03E1:  CLRF   3C
+03E2:  CLRF   3D
+03E3:  CLRF   3E
+03E4:  CLRF   3F
+03E5:  CLRF   40
+03E6:  CLRF   41
+03E7:  CLRF   42
+03E8:  CLRF   43
+03E9:  CLRF   44
+03EA:  CLRF   45
+03EB:  CLRF   46
+03EC:  CLRF   47
+03ED:  CLRF   48
+03EE:  CLRF   49
+03EF:  CLRF   4A
+03F0:  CLRF   4B
 ....................    int gen1 = 211, gen2 = 257; 
 ....................    int score = 0; 
 ....................    char keyInput;//get input. 
@@ -4559,1120 +3786,1142 @@ CCS PCM C Compiler, Version 5.074, 32906               02-เม.ย.-20 01:45
 ....................     
 ....................    lcd_init(); 
 *
-0400:  GOTO   13C
+03F6:  GOTO   13C
 ....................    delay_ms(6); 
-0401:  MOVLW  06
-0402:  MOVWF  60
-0403:  CALL   06F
+03F7:  MOVLW  06
+03F8:  MOVWF  68
+03F9:  CALL   06F
 ....................     
 ....................    printf ("\t\t< Welcome to 2048 game >\r\n"); 
-0404:  MOVLW  04
-0405:  BSF    03.6
-0406:  MOVWF  0D
-0407:  MOVLW  00
-0408:  MOVWF  0F
-0409:  BCF    03.6
-040A:  CALL   182
+03FA:  MOVLW  04
+03FB:  BSF    03.6
+03FC:  MOVWF  0D
+03FD:  MOVLW  00
+03FE:  MOVWF  0F
+03FF:  BCF    03.6
+0400:  CALL   182
 ....................    printf ("'a' = Left  'd' = Right  'w' = Up  's' = Down\r\n\n"); 
-040B:  MOVLW  13
-040C:  BSF    03.6
-040D:  MOVWF  0D
-040E:  MOVLW  00
-040F:  MOVWF  0F
-0410:  BCF    03.6
-0411:  CALL   182
+0401:  MOVLW  13
+0402:  BSF    03.6
+0403:  MOVWF  0D
+0404:  MOVLW  00
+0405:  MOVWF  0F
+0406:  BCF    03.6
+0407:  CALL   182
 ....................     
 ....................    while(TRUE) { 
 ....................       printf(lcd_putc,"\fYour score\n%u", score); 
-0412:  MOVLW  2C
-0413:  BSF    03.6
-0414:  MOVWF  0D
-0415:  MOVLW  00
-0416:  MOVWF  0F
-0417:  BCF    03.0
-0418:  MOVLW  0C
-0419:  BCF    03.6
-041A:  MOVWF  5B
-041B:  GOTO   218
-041C:  MOVF   46,W
-041D:  MOVWF  5B
-041E:  MOVLW  1B
-041F:  MOVWF  5C
-0420:  GOTO   286
+0408:  MOVLW  2C
+0409:  BSF    03.6
+040A:  MOVWF  0D
+040B:  MOVLW  00
+040C:  MOVWF  0F
+040D:  BCF    03.0
+040E:  MOVLW  0C
+040F:  BCF    03.6
+0410:  MOVWF  63
+0411:  GOTO   218
+0412:  MOVF   4E,W
+0413:  MOVWF  63
+0414:  MOVLW  1B
+0415:  MOVWF  64
+0416:  GOTO   286
 ....................       delay_ms(1); 
-0421:  MOVLW  01
-0422:  MOVWF  60
-0423:  CALL   06F
+0417:  MOVLW  01
+0418:  MOVWF  68
+0419:  CALL   06F
 ....................        
 ....................       //---------------------------game over check-----------------------------------------// 
 ....................       boolean canMove = false; 
 ....................       int count = 0; 
-0424:  BCF    4B.1
-0425:  CLRF   4C
+041A:  BCF    53.1
+041B:  CLRF   54
 ....................       for(int i=0;i<n;i++){ 
-0426:  CLRF   4D
-0427:  MOVF   4D,W
-0428:  SUBLW  03
-0429:  BTFSS  03.0
-042A:  GOTO   505
+041C:  CLRF   55
+041D:  MOVF   55,W
+041E:  SUBLW  03
+041F:  BTFSS  03.0
+0420:  GOTO   4FB
 ....................          for(int j=0;j<n;j++){ 
-042B:  CLRF   4E
-042C:  MOVF   4E,W
-042D:  SUBLW  03
-042E:  BTFSS  03.0
-042F:  GOTO   503
+0421:  CLRF   56
+0422:  MOVF   56,W
+0423:  SUBLW  03
+0424:  BTFSS  03.0
+0425:  GOTO   4F9
 ....................             if(board[i][j] == 0){ 
-0430:  RLF    4D,W
-0431:  MOVWF  77
-0432:  RLF    77,F
-0433:  MOVLW  FC
-0434:  ANDWF  77,F
-0435:  MOVF   77,W
-0436:  ADDWF  4E,W
-0437:  ADDLW  24
-0438:  MOVWF  04
-0439:  BCF    03.7
-043A:  MOVF   00,F
-043B:  BTFSS  03.2
-043C:  GOTO   44B
+0426:  RLF    55,W
+0427:  MOVWF  77
+0428:  RLF    77,F
+0429:  MOVLW  FC
+042A:  ANDWF  77,F
+042B:  MOVF   77,W
+042C:  ADDWF  56,W
+042D:  ADDLW  2C
+042E:  MOVWF  04
+042F:  BCF    03.7
+0430:  MOVF   00,F
+0431:  BTFSS  03.2
+0432:  GOTO   441
 ....................                freePos[count++] = (i * n) + j; 
-043D:  MOVF   4C,W
-043E:  INCF   4C,F
-043F:  ADDLW  34
-0440:  MOVWF  04
-0441:  BCF    03.7
-0442:  RLF    4D,W
-0443:  MOVWF  77
-0444:  RLF    77,F
-0445:  MOVLW  FC
-0446:  ANDWF  77,F
-0447:  MOVF   77,W
-0448:  ADDWF  4E,W
-0449:  MOVWF  00
+0433:  MOVF   54,W
+0434:  INCF   54,F
+0435:  ADDLW  3C
+0436:  MOVWF  04
+0437:  BCF    03.7
+0438:  RLF    55,W
+0439:  MOVWF  77
+043A:  RLF    77,F
+043B:  MOVLW  FC
+043C:  ANDWF  77,F
+043D:  MOVF   77,W
+043E:  ADDWF  56,W
+043F:  MOVWF  00
 ....................                canMove = true; 
-044A:  BSF    4B.1
+0440:  BSF    53.1
 ....................             } 
 ....................             if((i != 0 && (board[i-1][j] == 0 || board[i-1][j] == board[i][j])) || 
 ....................                (i != n-1 && (board[i+1][j] == 0 || board[i+1][j] == board[i][j])) || 
 ....................                (j != 0 && (board[i][j-1] == 0 || board[i][j-1] == board[i][j])) || 
 ....................                (j != n-1 && (board[i][j+1] == 0 || board[i][j+1] == board[i][j]))) canMove = true; 
-044B:  MOVF   4D,F
-044C:  BTFSC  03.2
-044D:  GOTO   479
-044E:  MOVLW  01
-044F:  SUBWF  4D,W
-0450:  MOVWF  77
-0451:  RLF    77,F
-0452:  RLF    77,F
-0453:  MOVLW  FC
-0454:  ANDWF  77,F
-0455:  MOVF   77,W
-0456:  ADDWF  4E,W
-0457:  ADDLW  24
-0458:  MOVWF  04
-0459:  BCF    03.7
-045A:  MOVF   00,F
-045B:  BTFSC  03.2
-045C:  GOTO   500
-045D:  MOVLW  01
-045E:  SUBWF  4D,W
-045F:  MOVWF  77
-0460:  RLF    77,F
-0461:  RLF    77,F
-0462:  MOVLW  FC
-0463:  ANDWF  77,F
-0464:  MOVF   77,W
-0465:  ADDWF  4E,W
-0466:  ADDLW  24
-0467:  MOVWF  04
-0468:  BCF    03.7
-0469:  MOVF   00,W
-046A:  MOVWF  5B
-046B:  RLF    4D,W
-046C:  MOVWF  77
-046D:  RLF    77,F
-046E:  MOVLW  FC
-046F:  ANDWF  77,F
-0470:  MOVF   77,W
-0471:  ADDWF  4E,W
-0472:  ADDLW  24
-0473:  MOVWF  04
-0474:  BCF    03.7
-0475:  MOVF   00,W
-0476:  SUBWF  5B,W
-0477:  BTFSC  03.2
-0478:  GOTO   500
-0479:  MOVF   4D,W
-047A:  SUBLW  03
-047B:  BTFSC  03.2
-047C:  GOTO   4A8
-047D:  MOVLW  01
-047E:  ADDWF  4D,W
-047F:  MOVWF  77
-0480:  RLF    77,F
-0481:  RLF    77,F
-0482:  MOVLW  FC
-0483:  ANDWF  77,F
-0484:  MOVF   77,W
-0485:  ADDWF  4E,W
-0486:  ADDLW  24
-0487:  MOVWF  04
-0488:  BCF    03.7
-0489:  MOVF   00,F
-048A:  BTFSC  03.2
-048B:  GOTO   500
-048C:  MOVLW  01
-048D:  ADDWF  4D,W
-048E:  MOVWF  77
-048F:  RLF    77,F
-0490:  RLF    77,F
-0491:  MOVLW  FC
-0492:  ANDWF  77,F
-0493:  MOVF   77,W
-0494:  ADDWF  4E,W
-0495:  ADDLW  24
-0496:  MOVWF  04
-0497:  BCF    03.7
-0498:  MOVF   00,W
-0499:  MOVWF  5B
-049A:  RLF    4D,W
-049B:  MOVWF  77
-049C:  RLF    77,F
-049D:  MOVLW  FC
-049E:  ANDWF  77,F
-049F:  MOVF   77,W
-04A0:  ADDWF  4E,W
-04A1:  ADDLW  24
-04A2:  MOVWF  04
-04A3:  BCF    03.7
-04A4:  MOVF   00,W
-04A5:  SUBWF  5B,W
-04A6:  BTFSC  03.2
-04A7:  GOTO   500
-04A8:  MOVF   4E,F
-04A9:  BTFSC  03.2
-04AA:  GOTO   4D4
-04AB:  RLF    4D,W
-04AC:  MOVWF  5B
-04AD:  RLF    5B,F
-04AE:  MOVLW  FC
-04AF:  ANDWF  5B,F
-04B0:  MOVLW  01
-04B1:  SUBWF  4E,W
-04B2:  ADDWF  5B,W
-04B3:  ADDLW  24
-04B4:  MOVWF  04
-04B5:  BCF    03.7
-04B6:  MOVF   00,F
-04B7:  BTFSC  03.2
-04B8:  GOTO   500
-04B9:  RLF    4D,W
-04BA:  MOVWF  5B
-04BB:  RLF    5B,F
-04BC:  MOVLW  FC
-04BD:  ANDWF  5B,F
-04BE:  MOVLW  01
-04BF:  SUBWF  4E,W
-04C0:  ADDWF  5B,W
-04C1:  ADDLW  24
-04C2:  MOVWF  04
-04C3:  BCF    03.7
-04C4:  MOVF   00,W
-04C5:  MOVWF  5B
-04C6:  RLF    4D,W
-04C7:  MOVWF  77
-04C8:  RLF    77,F
-04C9:  MOVLW  FC
-04CA:  ANDWF  77,F
-04CB:  MOVF   77,W
-04CC:  ADDWF  4E,W
-04CD:  ADDLW  24
-04CE:  MOVWF  04
-04CF:  BCF    03.7
-04D0:  MOVF   00,W
-04D1:  SUBWF  5B,W
-04D2:  BTFSC  03.2
-04D3:  GOTO   500
-04D4:  MOVF   4E,W
-04D5:  SUBLW  03
-04D6:  BTFSC  03.2
-04D7:  GOTO   501
-04D8:  RLF    4D,W
-04D9:  MOVWF  5B
-04DA:  RLF    5B,F
-04DB:  MOVLW  FC
-04DC:  ANDWF  5B,F
-04DD:  MOVLW  01
-04DE:  ADDWF  4E,W
-04DF:  ADDWF  5B,W
-04E0:  ADDLW  24
-04E1:  MOVWF  04
-04E2:  BCF    03.7
-04E3:  MOVF   00,F
-04E4:  BTFSC  03.2
-04E5:  GOTO   500
-04E6:  RLF    4D,W
-04E7:  MOVWF  5B
-04E8:  RLF    5B,F
-04E9:  MOVLW  FC
-04EA:  ANDWF  5B,F
-04EB:  MOVLW  01
-04EC:  ADDWF  4E,W
-04ED:  ADDWF  5B,W
-04EE:  ADDLW  24
-04EF:  MOVWF  04
-04F0:  BCF    03.7
-04F1:  MOVF   00,W
-04F2:  MOVWF  5B
-04F3:  RLF    4D,W
-04F4:  MOVWF  77
-04F5:  RLF    77,F
-04F6:  MOVLW  FC
-04F7:  ANDWF  77,F
-04F8:  MOVF   77,W
-04F9:  ADDWF  4E,W
-04FA:  ADDLW  24
-04FB:  MOVWF  04
-04FC:  BCF    03.7
-04FD:  MOVF   00,W
-04FE:  SUBWF  5B,W
-04FF:  BTFSC  03.2
-0500:  BSF    4B.1
-0501:  INCF   4E,F
-0502:  GOTO   42C
+0441:  MOVF   55,F
+0442:  BTFSC  03.2
+0443:  GOTO   46F
+0444:  MOVLW  01
+0445:  SUBWF  55,W
+0446:  MOVWF  77
+0447:  RLF    77,F
+0448:  RLF    77,F
+0449:  MOVLW  FC
+044A:  ANDWF  77,F
+044B:  MOVF   77,W
+044C:  ADDWF  56,W
+044D:  ADDLW  2C
+044E:  MOVWF  04
+044F:  BCF    03.7
+0450:  MOVF   00,F
+0451:  BTFSC  03.2
+0452:  GOTO   4F6
+0453:  MOVLW  01
+0454:  SUBWF  55,W
+0455:  MOVWF  77
+0456:  RLF    77,F
+0457:  RLF    77,F
+0458:  MOVLW  FC
+0459:  ANDWF  77,F
+045A:  MOVF   77,W
+045B:  ADDWF  56,W
+045C:  ADDLW  2C
+045D:  MOVWF  04
+045E:  BCF    03.7
+045F:  MOVF   00,W
+0460:  MOVWF  63
+0461:  RLF    55,W
+0462:  MOVWF  77
+0463:  RLF    77,F
+0464:  MOVLW  FC
+0465:  ANDWF  77,F
+0466:  MOVF   77,W
+0467:  ADDWF  56,W
+0468:  ADDLW  2C
+0469:  MOVWF  04
+046A:  BCF    03.7
+046B:  MOVF   00,W
+046C:  SUBWF  63,W
+046D:  BTFSC  03.2
+046E:  GOTO   4F6
+046F:  MOVF   55,W
+0470:  SUBLW  03
+0471:  BTFSC  03.2
+0472:  GOTO   49E
+0473:  MOVLW  01
+0474:  ADDWF  55,W
+0475:  MOVWF  77
+0476:  RLF    77,F
+0477:  RLF    77,F
+0478:  MOVLW  FC
+0479:  ANDWF  77,F
+047A:  MOVF   77,W
+047B:  ADDWF  56,W
+047C:  ADDLW  2C
+047D:  MOVWF  04
+047E:  BCF    03.7
+047F:  MOVF   00,F
+0480:  BTFSC  03.2
+0481:  GOTO   4F6
+0482:  MOVLW  01
+0483:  ADDWF  55,W
+0484:  MOVWF  77
+0485:  RLF    77,F
+0486:  RLF    77,F
+0487:  MOVLW  FC
+0488:  ANDWF  77,F
+0489:  MOVF   77,W
+048A:  ADDWF  56,W
+048B:  ADDLW  2C
+048C:  MOVWF  04
+048D:  BCF    03.7
+048E:  MOVF   00,W
+048F:  MOVWF  63
+0490:  RLF    55,W
+0491:  MOVWF  77
+0492:  RLF    77,F
+0493:  MOVLW  FC
+0494:  ANDWF  77,F
+0495:  MOVF   77,W
+0496:  ADDWF  56,W
+0497:  ADDLW  2C
+0498:  MOVWF  04
+0499:  BCF    03.7
+049A:  MOVF   00,W
+049B:  SUBWF  63,W
+049C:  BTFSC  03.2
+049D:  GOTO   4F6
+049E:  MOVF   56,F
+049F:  BTFSC  03.2
+04A0:  GOTO   4CA
+04A1:  RLF    55,W
+04A2:  MOVWF  63
+04A3:  RLF    63,F
+04A4:  MOVLW  FC
+04A5:  ANDWF  63,F
+04A6:  MOVLW  01
+04A7:  SUBWF  56,W
+04A8:  ADDWF  63,W
+04A9:  ADDLW  2C
+04AA:  MOVWF  04
+04AB:  BCF    03.7
+04AC:  MOVF   00,F
+04AD:  BTFSC  03.2
+04AE:  GOTO   4F6
+04AF:  RLF    55,W
+04B0:  MOVWF  63
+04B1:  RLF    63,F
+04B2:  MOVLW  FC
+04B3:  ANDWF  63,F
+04B4:  MOVLW  01
+04B5:  SUBWF  56,W
+04B6:  ADDWF  63,W
+04B7:  ADDLW  2C
+04B8:  MOVWF  04
+04B9:  BCF    03.7
+04BA:  MOVF   00,W
+04BB:  MOVWF  63
+04BC:  RLF    55,W
+04BD:  MOVWF  77
+04BE:  RLF    77,F
+04BF:  MOVLW  FC
+04C0:  ANDWF  77,F
+04C1:  MOVF   77,W
+04C2:  ADDWF  56,W
+04C3:  ADDLW  2C
+04C4:  MOVWF  04
+04C5:  BCF    03.7
+04C6:  MOVF   00,W
+04C7:  SUBWF  63,W
+04C8:  BTFSC  03.2
+04C9:  GOTO   4F6
+04CA:  MOVF   56,W
+04CB:  SUBLW  03
+04CC:  BTFSC  03.2
+04CD:  GOTO   4F7
+04CE:  RLF    55,W
+04CF:  MOVWF  63
+04D0:  RLF    63,F
+04D1:  MOVLW  FC
+04D2:  ANDWF  63,F
+04D3:  MOVLW  01
+04D4:  ADDWF  56,W
+04D5:  ADDWF  63,W
+04D6:  ADDLW  2C
+04D7:  MOVWF  04
+04D8:  BCF    03.7
+04D9:  MOVF   00,F
+04DA:  BTFSC  03.2
+04DB:  GOTO   4F6
+04DC:  RLF    55,W
+04DD:  MOVWF  63
+04DE:  RLF    63,F
+04DF:  MOVLW  FC
+04E0:  ANDWF  63,F
+04E1:  MOVLW  01
+04E2:  ADDWF  56,W
+04E3:  ADDWF  63,W
+04E4:  ADDLW  2C
+04E5:  MOVWF  04
+04E6:  BCF    03.7
+04E7:  MOVF   00,W
+04E8:  MOVWF  63
+04E9:  RLF    55,W
+04EA:  MOVWF  77
+04EB:  RLF    77,F
+04EC:  MOVLW  FC
+04ED:  ANDWF  77,F
+04EE:  MOVF   77,W
+04EF:  ADDWF  56,W
+04F0:  ADDLW  2C
+04F1:  MOVWF  04
+04F2:  BCF    03.7
+04F3:  MOVF   00,W
+04F4:  SUBWF  63,W
+04F5:  BTFSC  03.2
+04F6:  BSF    53.1
+04F7:  INCF   56,F
+04F8:  GOTO   422
 ....................          } 
-0503:  INCF   4D,F
-0504:  GOTO   427
+04F9:  INCF   55,F
+04FA:  GOTO   41D
 ....................       } 
 ....................       if(!canMove) { 
-0505:  BTFSC  4B.1
-0506:  GOTO   50F
+04FB:  BTFSC  53.1
+04FC:  GOTO   505
 ....................          printf("\t\t\t!Game Over!\r\n"); 
-0507:  MOVLW  34
-0508:  BSF    03.6
-0509:  MOVWF  0D
-050A:  MOVLW  00
-050B:  MOVWF  0F
-050C:  BCF    03.6
-050D:  CALL   182
+04FD:  MOVLW  34
+04FE:  BSF    03.6
+04FF:  MOVWF  0D
+0500:  MOVLW  00
+0501:  MOVWF  0F
+0502:  BCF    03.6
+0503:  CALL   182
 ....................          break; 
-050E:  GOTO   7B6
+0504:  GOTO   7C1
 ....................       } 
 ....................        //---------------------------game over check-----------------------------------------// 
 ....................        
 ....................       //---------------------------random Generator-----------------------------------------// 
 ....................       randPos = 0; 
-050F:  CLRF   48
+0505:  CLRF   50
+....................       if(gen2 == 0) gen2 = primeNum[count%10]; 
+0506:  MOVF   4D,F
+0507:  BTFSS  03.2
+0508:  GOTO   514
+0509:  MOVF   54,W
+050A:  MOVWF  6B
+050B:  MOVLW  0A
+050C:  MOVWF  6C
+050D:  CALL   271
+050E:  MOVLW  22
+050F:  ADDWF  77,W
+0510:  MOVWF  04
+0511:  BCF    03.7
+0512:  MOVF   00,W
+0513:  MOVWF  4D
 ....................       for(int i=0;i<count;i++){ 
-0510:  CLRF   4F
-0511:  MOVF   4C,W
-0512:  SUBWF  4F,W
-0513:  BTFSC  03.0
-0514:  GOTO   52F
+0514:  CLRF   57
+0515:  MOVF   54,W
+0516:  SUBWF  57,W
+0517:  BTFSC  03.0
+0518:  GOTO   533
 ....................          randPos += (freePos[i]*freePos[i])%43; 
-0515:  MOVLW  34
-0516:  ADDWF  4F,W
-0517:  MOVWF  04
-0518:  BCF    03.7
-0519:  MOVF   00,W
-051A:  MOVWF  5B
-051B:  MOVLW  34
-051C:  ADDWF  4F,W
-051D:  MOVWF  04
-051E:  BCF    03.7
-051F:  MOVF   00,W
-0520:  MOVWF  5C
-0521:  MOVF   5B,W
-0522:  MOVWF  5D
-0523:  MOVF   5C,W
-0524:  MOVWF  5E
-0525:  CALL   2BD
-0526:  MOVF   78,W
-0527:  MOVWF  63
-0528:  MOVLW  2B
-0529:  MOVWF  64
-052A:  CALL   271
-052B:  MOVF   77,W
-052C:  ADDWF  48,F
-052D:  INCF   4F,F
-052E:  GOTO   511
+0519:  MOVLW  3C
+051A:  ADDWF  57,W
+051B:  MOVWF  04
+051C:  BCF    03.7
+051D:  MOVF   00,W
+051E:  MOVWF  63
+051F:  MOVLW  3C
+0520:  ADDWF  57,W
+0521:  MOVWF  04
+0522:  BCF    03.7
+0523:  MOVF   00,W
+0524:  MOVWF  64
+0525:  MOVF   63,W
+0526:  MOVWF  65
+0527:  MOVF   64,W
+0528:  MOVWF  66
+0529:  CALL   2BD
+052A:  MOVF   78,W
+052B:  MOVWF  6B
+052C:  MOVLW  2B
+052D:  MOVWF  6C
+052E:  CALL   271
+052F:  MOVF   77,W
+0530:  ADDWF  50,F
+0531:  INCF   57,F
+0532:  GOTO   515
 ....................       } 
 ....................       randPos = abs((int)((gen1%41) * randPos))%count; 
-052F:  MOVF   44,W
-0530:  MOVWF  63
-0531:  MOVLW  29
-0532:  MOVWF  64
-0533:  CALL   271
-0534:  MOVF   77,W
-0535:  MOVWF  5D
-0536:  MOVF   48,W
-0537:  MOVWF  5E
-0538:  CALL   2BD
-0539:  MOVF   78,W
-053A:  MOVWF  5B
-053B:  MOVF   78,W
-053C:  MOVWF  63
-053D:  MOVF   4C,W
-053E:  MOVWF  64
-053F:  CALL   271
-0540:  MOVF   77,W
-0541:  MOVWF  48
+0533:  MOVF   4C,W
+0534:  MOVWF  6B
+0535:  MOVLW  29
+0536:  MOVWF  6C
+0537:  CALL   271
+0538:  MOVF   77,W
+0539:  MOVWF  65
+053A:  MOVF   50,W
+053B:  MOVWF  66
+053C:  CALL   2BD
+053D:  MOVF   78,W
+053E:  MOVWF  63
+053F:  MOVF   78,W
+0540:  MOVWF  6B
+0541:  MOVF   54,W
+0542:  MOVWF  6C
+0543:  CALL   271
+0544:  MOVF   77,W
+0545:  MOVWF  50
 ....................       int gen1Tmp = gen1; 
-0542:  MOVF   44,W
-0543:  MOVWF  50
+0546:  MOVF   4C,W
+0547:  MOVWF  58
 ....................       gen1 = gen2; 
-0544:  MOVF   45,W
-0545:  MOVWF  44
-....................       gen2 = (int)(gen2 * gen1Tmp * randPos); 
-0546:  MOVF   45,W
-0547:  MOVWF  5D
-0548:  MOVF   50,W
-0549:  MOVWF  5E
-054A:  CALL   2BD
-054B:  MOVF   78,W
-054C:  MOVWF  5D
-054D:  MOVF   48,W
-054E:  MOVWF  5E
-054F:  CALL   2BD
-0550:  MOVF   78,W
-0551:  MOVWF  45
+0548:  MOVF   4D,W
+0549:  MOVWF  4C
+....................       gen2 = (int)(gen2 * gen1Tmp * randPos + 1427); 
+054A:  MOVF   4D,W
+054B:  MOVWF  65
+054C:  MOVF   58,W
+054D:  MOVWF  66
+054E:  CALL   2BD
+054F:  MOVF   78,W
+0550:  MOVWF  65
+0551:  MOVF   50,W
+0552:  MOVWF  66
+0553:  CALL   2BD
+0554:  MOVLW  93
+0555:  ADDWF  78,W
+0556:  MOVWF  78
+0557:  MOVLW  05
+0558:  MOVWF  7A
+0559:  BTFSC  03.0
+055A:  INCF   7A,F
+055B:  MOVF   78,W
+055C:  MOVWF  4D
 ....................        
 ....................       board[freePos[randPos]/n][freePos[randPos]%n] = 2; //fill a new item(number 2) in board. 
-0552:  MOVLW  34
-0553:  ADDWF  48,W
-0554:  MOVWF  04
-0555:  BCF    03.7
-0556:  RRF    00,W
-0557:  MOVWF  77
-0558:  RRF    77,F
-0559:  MOVLW  3F
-055A:  ANDWF  77,F
-055B:  MOVF   77,W
-055C:  RLF    77,W
-055D:  MOVWF  5B
-055E:  RLF    5B,F
-055F:  MOVLW  FC
-0560:  ANDWF  5B,F
-0561:  MOVLW  34
-0562:  ADDWF  48,W
-0563:  MOVWF  04
-0564:  BCF    03.7
-0565:  MOVF   00,W
-0566:  ANDLW  03
-0567:  ADDWF  5B,W
-0568:  ADDLW  24
-0569:  MOVWF  04
-056A:  BCF    03.7
-056B:  MOVLW  02
-056C:  MOVWF  00
+055D:  MOVLW  3C
+055E:  ADDWF  50,W
+055F:  MOVWF  04
+0560:  BCF    03.7
+0561:  RRF    00,W
+0562:  MOVWF  77
+0563:  RRF    77,F
+0564:  MOVLW  3F
+0565:  ANDWF  77,F
+0566:  MOVF   77,W
+0567:  RLF    77,W
+0568:  MOVWF  63
+0569:  RLF    63,F
+056A:  MOVLW  FC
+056B:  ANDWF  63,F
+056C:  MOVLW  3C
+056D:  ADDWF  50,W
+056E:  MOVWF  04
+056F:  BCF    03.7
+0570:  MOVF   00,W
+0571:  ANDLW  03
+0572:  ADDWF  63,W
+0573:  ADDLW  2C
+0574:  MOVWF  04
+0575:  BCF    03.7
+0576:  MOVLW  02
+0577:  MOVWF  00
 ....................       //---------------------------random Generator-----------------------------------------// 
 ....................        
 ....................       //---------------------------show Board-----------------------------------------// 
 ....................       for(int i=0;i<n;i++){ 
-056D:  CLRF   51
-056E:  MOVF   51,W
-056F:  SUBLW  03
-0570:  BTFSS  03.0
-0571:  GOTO   59C
+0578:  CLRF   59
+0579:  MOVF   59,W
+057A:  SUBLW  03
+057B:  BTFSS  03.0
+057C:  GOTO   5A7
 ....................          printf("\t"); 
-0572:  MOVLW  09
-0573:  BTFSS  0C.4
-0574:  GOTO   573
-0575:  MOVWF  19
+057D:  MOVLW  09
+057E:  BTFSS  0C.4
+057F:  GOTO   57E
+0580:  MOVWF  19
 ....................          for(int j=0;j<n;j++){ 
-0576:  CLRF   52
-0577:  MOVF   52,W
-0578:  SUBLW  03
-0579:  BTFSS  03.0
-057A:  GOTO   592
+0581:  CLRF   5A
+0582:  MOVF   5A,W
+0583:  SUBLW  03
+0584:  BTFSS  03.0
+0585:  GOTO   59D
 ....................             printf("\t%d", board[i][j]); 
-057B:  RLF    51,W
-057C:  MOVWF  77
-057D:  RLF    77,F
-057E:  MOVLW  FC
-057F:  ANDWF  77,F
-0580:  MOVF   77,W
-0581:  ADDWF  52,W
-0582:  ADDLW  24
-0583:  MOVWF  04
-0584:  BCF    03.7
-0585:  MOVF   00,W
-0586:  MOVWF  5B
-0587:  MOVLW  09
-0588:  BTFSS  0C.4
-0589:  GOTO   588
-058A:  MOVWF  19
-058B:  MOVF   5B,W
-058C:  MOVWF  5D
-058D:  MOVLW  18
-058E:  MOVWF  5E
-058F:  CALL   2E2
-0590:  INCF   52,F
-0591:  GOTO   577
-....................          } 
-....................          printf("\r\n"); 
-0592:  MOVLW  0D
+0586:  RLF    59,W
+0587:  MOVWF  77
+0588:  RLF    77,F
+0589:  MOVLW  FC
+058A:  ANDWF  77,F
+058B:  MOVF   77,W
+058C:  ADDWF  5A,W
+058D:  ADDLW  2C
+058E:  MOVWF  04
+058F:  BCF    03.7
+0590:  MOVF   00,W
+0591:  MOVWF  63
+0592:  MOVLW  09
 0593:  BTFSS  0C.4
 0594:  GOTO   593
 0595:  MOVWF  19
-0596:  MOVLW  0A
-0597:  BTFSS  0C.4
-0598:  GOTO   597
-0599:  MOVWF  19
-059A:  INCF   51,F
-059B:  GOTO   56E
+0596:  MOVF   63,W
+0597:  MOVWF  65
+0598:  MOVLW  18
+0599:  MOVWF  66
+059A:  CALL   2E2
+059B:  INCF   5A,F
+059C:  GOTO   582
+....................          } 
+....................          printf("\r\n"); 
+059D:  MOVLW  0D
+059E:  BTFSS  0C.4
+059F:  GOTO   59E
+05A0:  MOVWF  19
+05A1:  MOVLW  0A
+05A2:  BTFSS  0C.4
+05A3:  GOTO   5A2
+05A4:  MOVWF  19
+05A5:  INCF   59,F
+05A6:  GOTO   579
 ....................       } 
 ....................       printf("\t\tadd new [2] in (%d,%d)\r\n",freePos[randPos]/n,freePos[randPos]%n); 
-059C:  MOVLW  34
-059D:  ADDWF  48,W
-059E:  MOVWF  04
-059F:  BCF    03.7
-05A0:  RRF    00,W
-05A1:  MOVWF  5B
-05A2:  RRF    5B,F
-05A3:  MOVLW  3F
-05A4:  ANDWF  5B,F
-05A5:  MOVLW  34
-05A6:  ADDWF  48,W
-05A7:  MOVWF  04
-05A8:  BCF    03.7
-05A9:  MOVF   00,W
-05AA:  ANDLW  03
-05AB:  MOVWF  5C
-05AC:  MOVLW  3D
-05AD:  BSF    03.6
-05AE:  MOVWF  0D
-05AF:  MOVLW  00
-05B0:  MOVWF  0F
-05B1:  BCF    03.0
-05B2:  MOVLW  12
-05B3:  BCF    03.6
-05B4:  MOVWF  5D
-05B5:  GOTO   33D
-05B6:  MOVF   5B,W
-05B7:  MOVWF  5D
-05B8:  MOVLW  18
-05B9:  MOVWF  5E
-05BA:  CALL   2E2
-05BB:  MOVLW  2C
-05BC:  BTFSS  0C.4
-05BD:  GOTO   5BC
-05BE:  MOVWF  19
-05BF:  MOVF   5C,W
-05C0:  MOVWF  5D
-05C1:  MOVLW  18
-05C2:  MOVWF  5E
-05C3:  CALL   2E2
-05C4:  MOVLW  29
-05C5:  BTFSS  0C.4
-05C6:  GOTO   5C5
-05C7:  MOVWF  19
-05C8:  MOVLW  0D
-05C9:  BTFSS  0C.4
-05CA:  GOTO   5C9
-05CB:  MOVWF  19
-05CC:  MOVLW  0A
-05CD:  BTFSS  0C.4
-05CE:  GOTO   5CD
-05CF:  MOVWF  19
+05A7:  MOVLW  3C
+05A8:  ADDWF  50,W
+05A9:  MOVWF  04
+05AA:  BCF    03.7
+05AB:  RRF    00,W
+05AC:  MOVWF  63
+05AD:  RRF    63,F
+05AE:  MOVLW  3F
+05AF:  ANDWF  63,F
+05B0:  MOVLW  3C
+05B1:  ADDWF  50,W
+05B2:  MOVWF  04
+05B3:  BCF    03.7
+05B4:  MOVF   00,W
+05B5:  ANDLW  03
+05B6:  MOVWF  64
+05B7:  MOVLW  3D
+05B8:  BSF    03.6
+05B9:  MOVWF  0D
+05BA:  MOVLW  00
+05BB:  MOVWF  0F
+05BC:  BCF    03.0
+05BD:  MOVLW  12
+05BE:  BCF    03.6
+05BF:  MOVWF  65
+05C0:  GOTO   33D
+05C1:  MOVF   63,W
+05C2:  MOVWF  65
+05C3:  MOVLW  18
+05C4:  MOVWF  66
+05C5:  CALL   2E2
+05C6:  MOVLW  2C
+05C7:  BTFSS  0C.4
+05C8:  GOTO   5C7
+05C9:  MOVWF  19
+05CA:  MOVF   64,W
+05CB:  MOVWF  65
+05CC:  MOVLW  18
+05CD:  MOVWF  66
+05CE:  CALL   2E2
+05CF:  MOVLW  29
+05D0:  BTFSS  0C.4
+05D1:  GOTO   5D0
+05D2:  MOVWF  19
+05D3:  MOVLW  0D
+05D4:  BTFSS  0C.4
+05D5:  GOTO   5D4
+05D6:  MOVWF  19
+05D7:  MOVLW  0A
+05D8:  BTFSS  0C.4
+05D9:  GOTO   5D8
+05DA:  MOVWF  19
 ....................       printf("\r\n"); 
-05D0:  MOVLW  0D
-05D1:  BTFSS  0C.4
-05D2:  GOTO   5D1
-05D3:  MOVWF  19
-05D4:  MOVLW  0A
-05D5:  BTFSS  0C.4
-05D6:  GOTO   5D5
-05D7:  MOVWF  19
+05DB:  MOVLW  0D
+05DC:  BTFSS  0C.4
+05DD:  GOTO   5DC
+05DE:  MOVWF  19
+05DF:  MOVLW  0A
+05E0:  BTFSS  0C.4
+05E1:  GOTO   5E0
+05E2:  MOVWF  19
 ....................       printf("\r\n"); 
-05D8:  MOVLW  0D
-05D9:  BTFSS  0C.4
-05DA:  GOTO   5D9
-05DB:  MOVWF  19
-05DC:  MOVLW  0A
-05DD:  BTFSS  0C.4
-05DE:  GOTO   5DD
-05DF:  MOVWF  19
+05E3:  MOVLW  0D
+05E4:  BTFSS  0C.4
+05E5:  GOTO   5E4
+05E6:  MOVWF  19
+05E7:  MOVLW  0A
+05E8:  BTFSS  0C.4
+05E9:  GOTO   5E8
+05EA:  MOVWF  19
 ....................       //---------------------------show Board-----------------------------------------// 
 ....................        
 ....................       //---------------------------get input and move-----------------------------------------// 
 ....................       keyInput = getc(); 
-05E0:  BTFSS  0C.5
-05E1:  GOTO   5E0
-05E2:  MOVF   1A,W
-05E3:  MOVWF  47
+05EB:  BTFSS  0C.5
+05EC:  GOTO   5EB
+05ED:  MOVF   1A,W
+05EE:  MOVWF  4F
 ....................       switch(keyInput){ 
-05E4:  MOVF   47,W
-05E5:  XORLW  61
-05E6:  BTFSC  03.2
-05E7:  GOTO   5F2
-05E8:  XORLW  05
-05E9:  BTFSC  03.2
-05EA:  GOTO   65F
-05EB:  XORLW  13
-05EC:  BTFSC  03.2
-05ED:  GOTO   6D1
-05EE:  XORLW  04
-05EF:  BTFSC  03.2
-05F0:  GOTO   740
-05F1:  GOTO   7B5
+05EF:  MOVF   4F,W
+05F0:  XORLW  61
+05F1:  BTFSC  03.2
+05F2:  GOTO   5FD
+05F3:  XORLW  05
+05F4:  BTFSC  03.2
+05F5:  GOTO   66A
+05F6:  XORLW  13
+05F7:  BTFSC  03.2
+05F8:  GOTO   6DC
+05F9:  XORLW  04
+05FA:  BTFSC  03.2
+05FB:  GOTO   74B
+05FC:  GOTO   7C0
 ....................          case 'a': //move items to the left if can. 
 ....................             printf("\t\t\t----Left----\r\n"); 
-05F2:  MOVLW  4B
-05F3:  BSF    03.6
-05F4:  MOVWF  0D
-05F5:  MOVLW  00
-05F6:  MOVWF  0F
-05F7:  BCF    03.6
-05F8:  CALL   182
+05FD:  MOVLW  4B
+05FE:  BSF    03.6
+05FF:  MOVWF  0D
+0600:  MOVLW  00
+0601:  MOVWF  0F
+0602:  BCF    03.6
+0603:  CALL   182
 ....................             for(int i=0;i<n;i++){ 
-05F9:  CLRF   53
-05FA:  MOVF   53,W
-05FB:  SUBLW  03
-05FC:  BTFSS  03.0
-05FD:  GOTO   65E
+0604:  CLRF   5B
+0605:  MOVF   5B,W
+0606:  SUBLW  03
+0607:  BTFSS  03.0
+0608:  GOTO   669
 ....................                for(int j=1;j<n;j++){ 
-05FE:  MOVLW  01
-05FF:  MOVWF  54
-0600:  MOVF   54,W
-0601:  SUBLW  03
-0602:  BTFSS  03.0
-0603:  GOTO   65C
+0609:  MOVLW  01
+060A:  MOVWF  5C
+060B:  MOVF   5C,W
+060C:  SUBLW  03
+060D:  BTFSS  03.0
+060E:  GOTO   667
 ....................                   newPos = j; 
-0604:  MOVF   54,W
-0605:  MOVWF  49
+060F:  MOVF   5C,W
+0610:  MOVWF  51
 ....................                   value = board[i][j]; 
-0606:  RLF    53,W
-0607:  MOVWF  77
-0608:  RLF    77,F
-0609:  MOVLW  FC
-060A:  ANDWF  77,F
-060B:  MOVF   77,W
-060C:  ADDWF  54,W
-060D:  ADDLW  24
-060E:  MOVWF  04
-060F:  BCF    03.7
-0610:  MOVF   00,W
-0611:  MOVWF  4A
+0611:  RLF    5B,W
+0612:  MOVWF  77
+0613:  RLF    77,F
+0614:  MOVLW  FC
+0615:  ANDWF  77,F
+0616:  MOVF   77,W
+0617:  ADDWF  5C,W
+0618:  ADDLW  2C
+0619:  MOVWF  04
+061A:  BCF    03.7
+061B:  MOVF   00,W
+061C:  MOVWF  52
 ....................                   while(newPos > 0){ 
-0612:  MOVF   49,F
-0613:  BTFSC  03.2
-0614:  GOTO   639
+061D:  MOVF   51,F
+061E:  BTFSC  03.2
+061F:  GOTO   644
 ....................                      if(board[i][newPos-1] == 0) newPos--; //move when position in left hand empty. 
-0615:  RLF    53,W
-0616:  MOVWF  5B
-0617:  RLF    5B,F
-0618:  MOVLW  FC
-0619:  ANDWF  5B,F
-061A:  MOVLW  01
-061B:  SUBWF  49,W
-061C:  ADDWF  5B,W
-061D:  ADDLW  24
-061E:  MOVWF  04
-061F:  BCF    03.7
-0620:  MOVF   00,F
-0621:  BTFSS  03.2
-0622:  GOTO   625
-0623:  DECF   49,F
-0624:  GOTO   638
+0620:  RLF    5B,W
+0621:  MOVWF  63
+0622:  RLF    63,F
+0623:  MOVLW  FC
+0624:  ANDWF  63,F
+0625:  MOVLW  01
+0626:  SUBWF  51,W
+0627:  ADDWF  63,W
+0628:  ADDLW  2C
+0629:  MOVWF  04
+062A:  BCF    03.7
+062B:  MOVF   00,F
+062C:  BTFSS  03.2
+062D:  GOTO   630
+062E:  DECF   51,F
+062F:  GOTO   643
 ....................                      else{ 
 ....................                         if(board[i][newPos-1] == value){ //move when value can sum with same number. 
-0625:  RLF    53,W
-0626:  MOVWF  5B
-0627:  RLF    5B,F
-0628:  MOVLW  FC
-0629:  ANDWF  5B,F
-062A:  MOVLW  01
-062B:  SUBWF  49,W
-062C:  ADDWF  5B,W
-062D:  ADDLW  24
-062E:  MOVWF  04
-062F:  BCF    03.7
-0630:  MOVF   4A,W
-0631:  SUBWF  00,W
-0632:  BTFSS  03.2
-0633:  GOTO   637
+0630:  RLF    5B,W
+0631:  MOVWF  63
+0632:  RLF    63,F
+0633:  MOVLW  FC
+0634:  ANDWF  63,F
+0635:  MOVLW  01
+0636:  SUBWF  51,W
+0637:  ADDWF  63,W
+0638:  ADDLW  2C
+0639:  MOVWF  04
+063A:  BCF    03.7
+063B:  MOVF   52,W
+063C:  SUBWF  00,W
+063D:  BTFSS  03.2
+063E:  GOTO   642
 ....................                            value*=2;  
-0634:  BCF    03.0
-0635:  RLF    4A,F
+063F:  BCF    03.0
+0640:  RLF    52,F
 ....................                            newPos--; 
-0636:  DECF   49,F
+0641:  DECF   51,F
 ....................                         } 
 ....................                         break;//end while loop. 
-0637:  GOTO   639
+0642:  GOTO   644
 ....................                      } 
-0638:  GOTO   612
+0643:  GOTO   61D
 ....................                   } 
 ....................                   if(newPos!=j){ 
-0639:  MOVF   54,W
-063A:  SUBWF  49,W
-063B:  BTFSC  03.2
-063C:  GOTO   65A
+0644:  MOVF   5C,W
+0645:  SUBWF  51,W
+0646:  BTFSC  03.2
+0647:  GOTO   665
 ....................                      if(value > 2) score += value; 
-063D:  MOVF   4A,W
-063E:  SUBLW  02
-063F:  BTFSC  03.0
-0640:  GOTO   643
-0641:  MOVF   4A,W
-0642:  ADDWF  46,F
+0648:  MOVF   52,W
+0649:  SUBLW  02
+064A:  BTFSC  03.0
+064B:  GOTO   64E
+064C:  MOVF   52,W
+064D:  ADDWF  4E,F
 ....................                      board[i][newPos] = value; 
-0643:  RLF    53,W
-0644:  MOVWF  77
-0645:  RLF    77,F
-0646:  MOVLW  FC
-0647:  ANDWF  77,F
-0648:  MOVF   77,W
-0649:  ADDWF  49,W
-064A:  ADDLW  24
-064B:  MOVWF  04
-064C:  BCF    03.7
-064D:  MOVF   4A,W
-064E:  MOVWF  00
+064E:  RLF    5B,W
+064F:  MOVWF  77
+0650:  RLF    77,F
+0651:  MOVLW  FC
+0652:  ANDWF  77,F
+0653:  MOVF   77,W
+0654:  ADDWF  51,W
+0655:  ADDLW  2C
+0656:  MOVWF  04
+0657:  BCF    03.7
+0658:  MOVF   52,W
+0659:  MOVWF  00
 ....................                      board[i][j] = 0; 
-064F:  RLF    53,W
-0650:  MOVWF  77
-0651:  RLF    77,F
-0652:  MOVLW  FC
-0653:  ANDWF  77,F
-0654:  MOVF   77,W
-0655:  ADDWF  54,W
-0656:  ADDLW  24
-0657:  MOVWF  04
-0658:  BCF    03.7
-0659:  CLRF   00
+065A:  RLF    5B,W
+065B:  MOVWF  77
+065C:  RLF    77,F
+065D:  MOVLW  FC
+065E:  ANDWF  77,F
+065F:  MOVF   77,W
+0660:  ADDWF  5C,W
+0661:  ADDLW  2C
+0662:  MOVWF  04
+0663:  BCF    03.7
+0664:  CLRF   00
 ....................                   } 
-065A:  INCF   54,F
-065B:  GOTO   600
+0665:  INCF   5C,F
+0666:  GOTO   60B
 ....................                } 
-065C:  INCF   53,F
-065D:  GOTO   5FA
+0667:  INCF   5B,F
+0668:  GOTO   605
 ....................             } 
 ....................              
 ....................             break; 
-065E:  GOTO   7B5
+0669:  GOTO   7C0
 ....................          case 'd': //move items to the right if can. 
 ....................             printf("\t\t\t---Right---\r\n"); 
-065F:  MOVLW  54
-0660:  BSF    03.6
-0661:  MOVWF  0D
-0662:  MOVLW  00
-0663:  MOVWF  0F
-0664:  BCF    03.6
-0665:  CALL   182
+066A:  MOVLW  54
+066B:  BSF    03.6
+066C:  MOVWF  0D
+066D:  MOVLW  00
+066E:  MOVWF  0F
+066F:  BCF    03.6
+0670:  CALL   182
 ....................             for(int i=0;i<n;i++){ 
-0666:  CLRF   55
-0667:  MOVF   55,W
-0668:  SUBLW  03
-0669:  BTFSS  03.0
-066A:  GOTO   6D0
+0671:  CLRF   5D
+0672:  MOVF   5D,W
+0673:  SUBLW  03
+0674:  BTFSS  03.0
+0675:  GOTO   6DB
 ....................                for(int j=1;j<n;j++){ 
-066B:  MOVLW  01
-066C:  MOVWF  56
-066D:  MOVF   56,W
-066E:  SUBLW  03
-066F:  BTFSS  03.0
-0670:  GOTO   6CE
+0676:  MOVLW  01
+0677:  MOVWF  5E
+0678:  MOVF   5E,W
+0679:  SUBLW  03
+067A:  BTFSS  03.0
+067B:  GOTO   6D9
 ....................                   newPos = n-1-j; 
-0671:  MOVF   56,W
-0672:  SUBLW  03
-0673:  MOVWF  49
+067C:  MOVF   5E,W
+067D:  SUBLW  03
+067E:  MOVWF  51
 ....................                   value = board[i][n-1-j]; 
-0674:  RLF    55,W
-0675:  MOVWF  5B
-0676:  RLF    5B,F
-0677:  MOVLW  FC
-0678:  ANDWF  5B,F
-0679:  MOVF   56,W
-067A:  SUBLW  03
-067B:  ADDWF  5B,W
-067C:  ADDLW  24
-067D:  MOVWF  04
-067E:  BCF    03.7
-067F:  MOVF   00,W
-0680:  MOVWF  4A
+067F:  RLF    5D,W
+0680:  MOVWF  63
+0681:  RLF    63,F
+0682:  MOVLW  FC
+0683:  ANDWF  63,F
+0684:  MOVF   5E,W
+0685:  SUBLW  03
+0686:  ADDWF  63,W
+0687:  ADDLW  2C
+0688:  MOVWF  04
+0689:  BCF    03.7
+068A:  MOVF   00,W
+068B:  MOVWF  52
 ....................                   while(newPos < n-1){ 
-0681:  MOVF   49,W
-0682:  SUBLW  02
-0683:  BTFSS  03.0
-0684:  GOTO   6A9
+068C:  MOVF   51,W
+068D:  SUBLW  02
+068E:  BTFSS  03.0
+068F:  GOTO   6B4
 ....................                      if(board[i][newPos+1] == 0) newPos++; //move when position in right hand empty. 
-0685:  RLF    55,W
-0686:  MOVWF  5B
-0687:  RLF    5B,F
-0688:  MOVLW  FC
-0689:  ANDWF  5B,F
-068A:  MOVLW  01
-068B:  ADDWF  49,W
-068C:  ADDWF  5B,W
-068D:  ADDLW  24
-068E:  MOVWF  04
-068F:  BCF    03.7
-0690:  MOVF   00,F
-0691:  BTFSS  03.2
-0692:  GOTO   695
-0693:  INCF   49,F
-0694:  GOTO   6A8
+0690:  RLF    5D,W
+0691:  MOVWF  63
+0692:  RLF    63,F
+0693:  MOVLW  FC
+0694:  ANDWF  63,F
+0695:  MOVLW  01
+0696:  ADDWF  51,W
+0697:  ADDWF  63,W
+0698:  ADDLW  2C
+0699:  MOVWF  04
+069A:  BCF    03.7
+069B:  MOVF   00,F
+069C:  BTFSS  03.2
+069D:  GOTO   6A0
+069E:  INCF   51,F
+069F:  GOTO   6B3
 ....................                      else{ 
 ....................                         if(board[i][newPos+1] == value){ //move when value can sum with same number. 
-0695:  RLF    55,W
-0696:  MOVWF  5B
-0697:  RLF    5B,F
-0698:  MOVLW  FC
-0699:  ANDWF  5B,F
-069A:  MOVLW  01
-069B:  ADDWF  49,W
-069C:  ADDWF  5B,W
-069D:  ADDLW  24
-069E:  MOVWF  04
-069F:  BCF    03.7
-06A0:  MOVF   4A,W
-06A1:  SUBWF  00,W
-06A2:  BTFSS  03.2
-06A3:  GOTO   6A7
+06A0:  RLF    5D,W
+06A1:  MOVWF  63
+06A2:  RLF    63,F
+06A3:  MOVLW  FC
+06A4:  ANDWF  63,F
+06A5:  MOVLW  01
+06A6:  ADDWF  51,W
+06A7:  ADDWF  63,W
+06A8:  ADDLW  2C
+06A9:  MOVWF  04
+06AA:  BCF    03.7
+06AB:  MOVF   52,W
+06AC:  SUBWF  00,W
+06AD:  BTFSS  03.2
+06AE:  GOTO   6B2
 ....................                            value*=2;  
-06A4:  BCF    03.0
-06A5:  RLF    4A,F
+06AF:  BCF    03.0
+06B0:  RLF    52,F
 ....................                            newPos++; 
-06A6:  INCF   49,F
+06B1:  INCF   51,F
 ....................                         } 
 ....................                         break;//end while loop. 
-06A7:  GOTO   6A9
+06B2:  GOTO   6B4
 ....................                      } 
-06A8:  GOTO   681
+06B3:  GOTO   68C
 ....................                   } 
 ....................                   if(newPos!=n-1-j){ 
-06A9:  MOVF   56,W
-06AA:  SUBLW  03
-06AB:  SUBWF  49,W
-06AC:  BTFSC  03.2
-06AD:  GOTO   6CC
+06B4:  MOVF   5E,W
+06B5:  SUBLW  03
+06B6:  SUBWF  51,W
+06B7:  BTFSC  03.2
+06B8:  GOTO   6D7
 ....................                      if(value > 2) score += value; 
-06AE:  MOVF   4A,W
-06AF:  SUBLW  02
-06B0:  BTFSC  03.0
-06B1:  GOTO   6B4
-06B2:  MOVF   4A,W
-06B3:  ADDWF  46,F
+06B9:  MOVF   52,W
+06BA:  SUBLW  02
+06BB:  BTFSC  03.0
+06BC:  GOTO   6BF
+06BD:  MOVF   52,W
+06BE:  ADDWF  4E,F
 ....................                      board[i][newPos] = value; 
-06B4:  RLF    55,W
-06B5:  MOVWF  77
-06B6:  RLF    77,F
-06B7:  MOVLW  FC
-06B8:  ANDWF  77,F
-06B9:  MOVF   77,W
-06BA:  ADDWF  49,W
-06BB:  ADDLW  24
-06BC:  MOVWF  04
-06BD:  BCF    03.7
-06BE:  MOVF   4A,W
-06BF:  MOVWF  00
+06BF:  RLF    5D,W
+06C0:  MOVWF  77
+06C1:  RLF    77,F
+06C2:  MOVLW  FC
+06C3:  ANDWF  77,F
+06C4:  MOVF   77,W
+06C5:  ADDWF  51,W
+06C6:  ADDLW  2C
+06C7:  MOVWF  04
+06C8:  BCF    03.7
+06C9:  MOVF   52,W
+06CA:  MOVWF  00
 ....................                      board[i][n-1-j] = 0; 
-06C0:  RLF    55,W
-06C1:  MOVWF  5B
-06C2:  RLF    5B,F
-06C3:  MOVLW  FC
-06C4:  ANDWF  5B,F
-06C5:  MOVF   56,W
-06C6:  SUBLW  03
-06C7:  ADDWF  5B,W
-06C8:  ADDLW  24
-06C9:  MOVWF  04
-06CA:  BCF    03.7
-06CB:  CLRF   00
+06CB:  RLF    5D,W
+06CC:  MOVWF  63
+06CD:  RLF    63,F
+06CE:  MOVLW  FC
+06CF:  ANDWF  63,F
+06D0:  MOVF   5E,W
+06D1:  SUBLW  03
+06D2:  ADDWF  63,W
+06D3:  ADDLW  2C
+06D4:  MOVWF  04
+06D5:  BCF    03.7
+06D6:  CLRF   00
 ....................                   } 
-06CC:  INCF   56,F
-06CD:  GOTO   66D
+06D7:  INCF   5E,F
+06D8:  GOTO   678
 ....................                } 
-06CE:  INCF   55,F
-06CF:  GOTO   667
+06D9:  INCF   5D,F
+06DA:  GOTO   672
 ....................             } 
 ....................             break; 
-06D0:  GOTO   7B5
+06DB:  GOTO   7C0
 ....................          case 'w': //move items to the top if can. 
 ....................             printf("\t\t\t----Top----\r\n"); 
-06D1:  MOVLW  5D
-06D2:  BSF    03.6
-06D3:  MOVWF  0D
-06D4:  MOVLW  00
-06D5:  MOVWF  0F
-06D6:  BCF    03.6
-06D7:  CALL   182
+06DC:  MOVLW  5D
+06DD:  BSF    03.6
+06DE:  MOVWF  0D
+06DF:  MOVLW  00
+06E0:  MOVWF  0F
+06E1:  BCF    03.6
+06E2:  CALL   182
 ....................             for(int i=0;i<n;i++){ 
-06D8:  CLRF   57
-06D9:  MOVF   57,W
-06DA:  SUBLW  03
-06DB:  BTFSS  03.0
-06DC:  GOTO   73F
+06E3:  CLRF   5F
+06E4:  MOVF   5F,W
+06E5:  SUBLW  03
+06E6:  BTFSS  03.0
+06E7:  GOTO   74A
 ....................                for(int j=1;j<n;j++){ 
-06DD:  MOVLW  01
-06DE:  MOVWF  58
-06DF:  MOVF   58,W
-06E0:  SUBLW  03
-06E1:  BTFSS  03.0
-06E2:  GOTO   73D
+06E8:  MOVLW  01
+06E9:  MOVWF  60
+06EA:  MOVF   60,W
+06EB:  SUBLW  03
+06EC:  BTFSS  03.0
+06ED:  GOTO   748
 ....................                   newPos = j; 
-06E3:  MOVF   58,W
-06E4:  MOVWF  49
+06EE:  MOVF   60,W
+06EF:  MOVWF  51
 ....................                   value = board[j][i]; 
-06E5:  RLF    58,W
-06E6:  MOVWF  77
-06E7:  RLF    77,F
-06E8:  MOVLW  FC
-06E9:  ANDWF  77,F
-06EA:  MOVF   77,W
-06EB:  ADDWF  57,W
-06EC:  ADDLW  24
-06ED:  MOVWF  04
-06EE:  BCF    03.7
-06EF:  MOVF   00,W
-06F0:  MOVWF  4A
+06F0:  RLF    60,W
+06F1:  MOVWF  77
+06F2:  RLF    77,F
+06F3:  MOVLW  FC
+06F4:  ANDWF  77,F
+06F5:  MOVF   77,W
+06F6:  ADDWF  5F,W
+06F7:  ADDLW  2C
+06F8:  MOVWF  04
+06F9:  BCF    03.7
+06FA:  MOVF   00,W
+06FB:  MOVWF  52
 ....................                   while(newPos > 0){ 
-06F1:  MOVF   49,F
-06F2:  BTFSC  03.2
-06F3:  GOTO   71A
+06FC:  MOVF   51,F
+06FD:  BTFSC  03.2
+06FE:  GOTO   725
 ....................                      if(board[newPos-1][i] == 0) newPos--; //move when position in top hand empty. 
-06F4:  MOVLW  01
-06F5:  SUBWF  49,W
-06F6:  MOVWF  77
-06F7:  RLF    77,F
-06F8:  RLF    77,F
-06F9:  MOVLW  FC
-06FA:  ANDWF  77,F
-06FB:  MOVF   77,W
-06FC:  ADDWF  57,W
-06FD:  ADDLW  24
-06FE:  MOVWF  04
-06FF:  BCF    03.7
-0700:  MOVF   00,F
-0701:  BTFSS  03.2
-0702:  GOTO   705
-0703:  DECF   49,F
-0704:  GOTO   719
+06FF:  MOVLW  01
+0700:  SUBWF  51,W
+0701:  MOVWF  77
+0702:  RLF    77,F
+0703:  RLF    77,F
+0704:  MOVLW  FC
+0705:  ANDWF  77,F
+0706:  MOVF   77,W
+0707:  ADDWF  5F,W
+0708:  ADDLW  2C
+0709:  MOVWF  04
+070A:  BCF    03.7
+070B:  MOVF   00,F
+070C:  BTFSS  03.2
+070D:  GOTO   710
+070E:  DECF   51,F
+070F:  GOTO   724
 ....................                      else{ 
 ....................                         if(board[newPos-1][i] == value){ //move when value can sum with same number. 
-0705:  MOVLW  01
-0706:  SUBWF  49,W
-0707:  MOVWF  77
-0708:  RLF    77,F
-0709:  RLF    77,F
-070A:  MOVLW  FC
-070B:  ANDWF  77,F
-070C:  MOVF   77,W
-070D:  ADDWF  57,W
-070E:  ADDLW  24
-070F:  MOVWF  04
-0710:  BCF    03.7
-0711:  MOVF   4A,W
-0712:  SUBWF  00,W
-0713:  BTFSS  03.2
-0714:  GOTO   718
+0710:  MOVLW  01
+0711:  SUBWF  51,W
+0712:  MOVWF  77
+0713:  RLF    77,F
+0714:  RLF    77,F
+0715:  MOVLW  FC
+0716:  ANDWF  77,F
+0717:  MOVF   77,W
+0718:  ADDWF  5F,W
+0719:  ADDLW  2C
+071A:  MOVWF  04
+071B:  BCF    03.7
+071C:  MOVF   52,W
+071D:  SUBWF  00,W
+071E:  BTFSS  03.2
+071F:  GOTO   723
 ....................                            value*=2;  
-0715:  BCF    03.0
-0716:  RLF    4A,F
+0720:  BCF    03.0
+0721:  RLF    52,F
 ....................                            newPos--; 
-0717:  DECF   49,F
+0722:  DECF   51,F
 ....................                         } 
 ....................                         break;//end while loop. 
-0718:  GOTO   71A
+0723:  GOTO   725
 ....................                      } 
-0719:  GOTO   6F1
+0724:  GOTO   6FC
 ....................                   } 
 ....................                   if(newPos!=j){ 
-071A:  MOVF   58,W
-071B:  SUBWF  49,W
-071C:  BTFSC  03.2
-071D:  GOTO   73B
+0725:  MOVF   60,W
+0726:  SUBWF  51,W
+0727:  BTFSC  03.2
+0728:  GOTO   746
 ....................                      if(value > 2) score += value; 
-071E:  MOVF   4A,W
-071F:  SUBLW  02
-0720:  BTFSC  03.0
-0721:  GOTO   724
-0722:  MOVF   4A,W
-0723:  ADDWF  46,F
+0729:  MOVF   52,W
+072A:  SUBLW  02
+072B:  BTFSC  03.0
+072C:  GOTO   72F
+072D:  MOVF   52,W
+072E:  ADDWF  4E,F
 ....................                      board[newPos][i] = value; 
-0724:  RLF    49,W
-0725:  MOVWF  77
-0726:  RLF    77,F
-0727:  MOVLW  FC
-0728:  ANDWF  77,F
-0729:  MOVF   77,W
-072A:  ADDWF  57,W
-072B:  ADDLW  24
-072C:  MOVWF  04
-072D:  BCF    03.7
-072E:  MOVF   4A,W
-072F:  MOVWF  00
+072F:  RLF    51,W
+0730:  MOVWF  77
+0731:  RLF    77,F
+0732:  MOVLW  FC
+0733:  ANDWF  77,F
+0734:  MOVF   77,W
+0735:  ADDWF  5F,W
+0736:  ADDLW  2C
+0737:  MOVWF  04
+0738:  BCF    03.7
+0739:  MOVF   52,W
+073A:  MOVWF  00
 ....................                      board[j][i] = 0; 
-0730:  RLF    58,W
-0731:  MOVWF  77
-0732:  RLF    77,F
-0733:  MOVLW  FC
-0734:  ANDWF  77,F
-0735:  MOVF   77,W
-0736:  ADDWF  57,W
-0737:  ADDLW  24
-0738:  MOVWF  04
-0739:  BCF    03.7
-073A:  CLRF   00
+073B:  RLF    60,W
+073C:  MOVWF  77
+073D:  RLF    77,F
+073E:  MOVLW  FC
+073F:  ANDWF  77,F
+0740:  MOVF   77,W
+0741:  ADDWF  5F,W
+0742:  ADDLW  2C
+0743:  MOVWF  04
+0744:  BCF    03.7
+0745:  CLRF   00
 ....................                   } 
-073B:  INCF   58,F
-073C:  GOTO   6DF
+0746:  INCF   60,F
+0747:  GOTO   6EA
 ....................                } 
-073D:  INCF   57,F
-073E:  GOTO   6D9
+0748:  INCF   5F,F
+0749:  GOTO   6E4
 ....................             } 
 ....................             break; 
-073F:  GOTO   7B5
+074A:  GOTO   7C0
 ....................          case 's': //move items to the bottom if can. 
 ....................             printf("\t\t\t---Bottom---\r\n"); 
-0740:  MOVLW  66
-0741:  BSF    03.6
-0742:  MOVWF  0D
-0743:  MOVLW  00
-0744:  MOVWF  0F
-0745:  BCF    03.6
-0746:  CALL   182
+074B:  MOVLW  66
+074C:  BSF    03.6
+074D:  MOVWF  0D
+074E:  MOVLW  00
+074F:  MOVWF  0F
+0750:  BCF    03.6
+0751:  CALL   182
 ....................             for(int i=0;i<n;i++){ 
-0747:  CLRF   59
-0748:  MOVF   59,W
-0749:  SUBLW  03
-074A:  BTFSS  03.0
-074B:  GOTO   7B5
+0752:  CLRF   61
+0753:  MOVF   61,W
+0754:  SUBLW  03
+0755:  BTFSS  03.0
+0756:  GOTO   7C0
 ....................                for(int j=1;j<n;j++){ 
-074C:  MOVLW  01
-074D:  MOVWF  5A
-074E:  MOVF   5A,W
-074F:  SUBLW  03
-0750:  BTFSS  03.0
-0751:  GOTO   7B3
+0757:  MOVLW  01
+0758:  MOVWF  62
+0759:  MOVF   62,W
+075A:  SUBLW  03
+075B:  BTFSS  03.0
+075C:  GOTO   7BE
 ....................                   newPos = n-1-j; 
-0752:  MOVF   5A,W
-0753:  SUBLW  03
-0754:  MOVWF  49
+075D:  MOVF   62,W
+075E:  SUBLW  03
+075F:  MOVWF  51
 ....................                   value = board[n-1-j][i]; 
-0755:  MOVF   5A,W
-0756:  SUBLW  03
-0757:  MOVWF  77
-0758:  RLF    77,F
-0759:  RLF    77,F
-075A:  MOVLW  FC
-075B:  ANDWF  77,F
-075C:  MOVF   77,W
-075D:  ADDWF  59,W
-075E:  ADDLW  24
-075F:  MOVWF  04
-0760:  BCF    03.7
-0761:  MOVF   00,W
-0762:  MOVWF  4A
+0760:  MOVF   62,W
+0761:  SUBLW  03
+0762:  MOVWF  77
+0763:  RLF    77,F
+0764:  RLF    77,F
+0765:  MOVLW  FC
+0766:  ANDWF  77,F
+0767:  MOVF   77,W
+0768:  ADDWF  61,W
+0769:  ADDLW  2C
+076A:  MOVWF  04
+076B:  BCF    03.7
+076C:  MOVF   00,W
+076D:  MOVWF  52
 ....................                   while(newPos < n-1){ 
-0763:  MOVF   49,W
-0764:  SUBLW  02
-0765:  BTFSS  03.0
-0766:  GOTO   78D
+076E:  MOVF   51,W
+076F:  SUBLW  02
+0770:  BTFSS  03.0
+0771:  GOTO   798
 ....................                      if(board[newPos+1][i] == 0) newPos++; //move when position in bottom hand empty. 
-0767:  MOVLW  01
-0768:  ADDWF  49,W
-0769:  MOVWF  77
-076A:  RLF    77,F
-076B:  RLF    77,F
-076C:  MOVLW  FC
-076D:  ANDWF  77,F
-076E:  MOVF   77,W
-076F:  ADDWF  59,W
-0770:  ADDLW  24
-0771:  MOVWF  04
-0772:  BCF    03.7
-0773:  MOVF   00,F
-0774:  BTFSS  03.2
-0775:  GOTO   778
-0776:  INCF   49,F
-0777:  GOTO   78C
+0772:  MOVLW  01
+0773:  ADDWF  51,W
+0774:  MOVWF  77
+0775:  RLF    77,F
+0776:  RLF    77,F
+0777:  MOVLW  FC
+0778:  ANDWF  77,F
+0779:  MOVF   77,W
+077A:  ADDWF  61,W
+077B:  ADDLW  2C
+077C:  MOVWF  04
+077D:  BCF    03.7
+077E:  MOVF   00,F
+077F:  BTFSS  03.2
+0780:  GOTO   783
+0781:  INCF   51,F
+0782:  GOTO   797
 ....................                      else{ 
 ....................                         if(board[newPos+1][i] == value){ //move when value can sum with same number. 
-0778:  MOVLW  01
-0779:  ADDWF  49,W
-077A:  MOVWF  77
-077B:  RLF    77,F
-077C:  RLF    77,F
-077D:  MOVLW  FC
-077E:  ANDWF  77,F
-077F:  MOVF   77,W
-0780:  ADDWF  59,W
-0781:  ADDLW  24
-0782:  MOVWF  04
-0783:  BCF    03.7
-0784:  MOVF   4A,W
-0785:  SUBWF  00,W
-0786:  BTFSS  03.2
-0787:  GOTO   78B
+0783:  MOVLW  01
+0784:  ADDWF  51,W
+0785:  MOVWF  77
+0786:  RLF    77,F
+0787:  RLF    77,F
+0788:  MOVLW  FC
+0789:  ANDWF  77,F
+078A:  MOVF   77,W
+078B:  ADDWF  61,W
+078C:  ADDLW  2C
+078D:  MOVWF  04
+078E:  BCF    03.7
+078F:  MOVF   52,W
+0790:  SUBWF  00,W
+0791:  BTFSS  03.2
+0792:  GOTO   796
 ....................                            value*=2;  
-0788:  BCF    03.0
-0789:  RLF    4A,F
+0793:  BCF    03.0
+0794:  RLF    52,F
 ....................                            newPos++; 
-078A:  INCF   49,F
+0795:  INCF   51,F
 ....................                         } 
 ....................                         break;//end while loop. 
-078B:  GOTO   78D
+0796:  GOTO   798
 ....................                      } 
-078C:  GOTO   763
+0797:  GOTO   76E
 ....................                   } 
 ....................                   if(newPos!=n-1-j){ 
-078D:  MOVF   5A,W
-078E:  SUBLW  03
-078F:  SUBWF  49,W
-0790:  BTFSC  03.2
-0791:  GOTO   7B1
+0798:  MOVF   62,W
+0799:  SUBLW  03
+079A:  SUBWF  51,W
+079B:  BTFSC  03.2
+079C:  GOTO   7BC
 ....................                      if(value > 2) score += value; 
-0792:  MOVF   4A,W
-0793:  SUBLW  02
-0794:  BTFSC  03.0
-0795:  GOTO   798
-0796:  MOVF   4A,W
-0797:  ADDWF  46,F
+079D:  MOVF   52,W
+079E:  SUBLW  02
+079F:  BTFSC  03.0
+07A0:  GOTO   7A3
+07A1:  MOVF   52,W
+07A2:  ADDWF  4E,F
 ....................                      board[newPos][i] = value; 
-0798:  RLF    49,W
-0799:  MOVWF  77
-079A:  RLF    77,F
-079B:  MOVLW  FC
-079C:  ANDWF  77,F
-079D:  MOVF   77,W
-079E:  ADDWF  59,W
-079F:  ADDLW  24
-07A0:  MOVWF  04
-07A1:  BCF    03.7
-07A2:  MOVF   4A,W
-07A3:  MOVWF  00
+07A3:  RLF    51,W
+07A4:  MOVWF  77
+07A5:  RLF    77,F
+07A6:  MOVLW  FC
+07A7:  ANDWF  77,F
+07A8:  MOVF   77,W
+07A9:  ADDWF  61,W
+07AA:  ADDLW  2C
+07AB:  MOVWF  04
+07AC:  BCF    03.7
+07AD:  MOVF   52,W
+07AE:  MOVWF  00
 ....................                      board[n-1-j][i] = 0; 
-07A4:  MOVF   5A,W
-07A5:  SUBLW  03
-07A6:  MOVWF  77
-07A7:  RLF    77,F
-07A8:  RLF    77,F
-07A9:  MOVLW  FC
-07AA:  ANDWF  77,F
-07AB:  MOVF   77,W
-07AC:  ADDWF  59,W
-07AD:  ADDLW  24
-07AE:  MOVWF  04
-07AF:  BCF    03.7
-07B0:  CLRF   00
+07AF:  MOVF   62,W
+07B0:  SUBLW  03
+07B1:  MOVWF  77
+07B2:  RLF    77,F
+07B3:  RLF    77,F
+07B4:  MOVLW  FC
+07B5:  ANDWF  77,F
+07B6:  MOVF   77,W
+07B7:  ADDWF  61,W
+07B8:  ADDLW  2C
+07B9:  MOVWF  04
+07BA:  BCF    03.7
+07BB:  CLRF   00
 ....................                   } 
-07B1:  INCF   5A,F
-07B2:  GOTO   74E
+07BC:  INCF   62,F
+07BD:  GOTO   759
 ....................                } 
-07B3:  INCF   59,F
-07B4:  GOTO   748
+07BE:  INCF   61,F
+07BF:  GOTO   753
 ....................             } 
 ....................             break;  
 ....................          default: 
 ....................       } 
-07B5:  GOTO   412
+07C0:  GOTO   408
 ....................       //---------------------------get input and move-----------------------------------------// 
 ....................        
 ....................    } 
 ....................     
 .................... } 
-07B6:  SLEEP
+07C1:  SLEEP
 
 Configuration Fuses:
    Word  1: 2FC4   INTRC_IO NOWDT PUT NOMCLR NOPROTECT NOCPD BROWNOUT IESO FCMEN NOLVP NODEBUG
