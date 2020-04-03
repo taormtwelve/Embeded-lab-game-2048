@@ -11,7 +11,7 @@ Type=4
 1=main.c
 
 [defines]
-buildcount=142
+buildcount=145
 
 [ProjectLog]
 Days=3
@@ -25,7 +25,7 @@ D1_L5=[15700]Started Editing.
 D1_L6=[16004]Stopped Editing.
 D1_L7=[16482]Started Editing.
 D1_L8=[17546]Stopped Editing.
-TotalEdit=231
+TotalEdit=238
 TotalDebug=0
 D1_E=39
 D1_D=0
@@ -70,9 +70,9 @@ D2_L9=[6655]Project Closed.
 D2_L10=[86368]Project Opened.
 D2_L11=[86383]Started Editing.
 D3=03-04-2020
-D3_L=8
+D3_L=13
 D3_L1=[941]Stopped Editing.
-D3_E=42
+D3_E=49
 D3_D=0
 D3_L2=[941]Project Closed.
 D3_L3=[954]Project Opened.
@@ -81,10 +81,15 @@ D3_L5=[1380]Stopped Editing.
 D3_L6=[1487]Started Editing.
 D3_L7=[3248]Stopped Editing.
 D3_L8=[3271]Project Closed.
+D3_L9=[38521]Project Opened.
+D3_L10=[38729]Started Editing.
+D3_L11=[39420]Stopped Editing.
+D3_L12=[45385]Project Closed.
+D3_L13=[47728]Project Opened.
 
 [Opened Files]
 1=main.c
-t1=65
+t1=43
 2=..\lcd 16x2\ex_lcd.c
 t2=1
 Count=1

@@ -19,16 +19,16 @@
 #use delay(clock=8M)
 
 #use rs232(baud=9600,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8)
-#include <time.h>
+//#include <time.h>
 #include<math.h>
 #include "lcd.c"
-
+#define RESET_BUTTON    PIN_d0
 #DEFINE n 4
 
 
 void main()
 {  
-   
+   int primeNum[10] = {1091,1427,1753,1571,1291,2671,701,373,661,281};
    int board[n][n] = {0};
    int freePos[n*n]={0};
    int gen1 = 211, gen2 = 257;
@@ -41,16 +41,14 @@ void main()
    
    lcd_init();
    delay_ms(6);
-   printf(lcd_putc,"\fYour score : %u",0);
-   delay_ms(1);
+   
    printf ("\t\t< Welcome to 2048 game >\r\n");
    printf ("'a' = Left  'd' = Right  'w' = Up  's' = Down\r\n\n");
-   //random number , Game over and count score not complete yet.
    
-   while(1) {
-      printf(lcd_putc,"\fYour score :\n%u",score);
+   while(TRUE) {
+      printf(lcd_putc,"\fYour score\n%u", score);
       delay_ms(1);
- 
+      
       //---------------------------game over check-----------------------------------------//
       boolean canMove = false;
       int count = 0;
@@ -67,32 +65,34 @@ void main()
          }
       }
       if(!canMove) {
-         printf("\t\t!Game Over!\r\n");
+         printf("\t\t\t!Game Over!\r\n");
          break;
       }
        //---------------------------game over check-----------------------------------------//
       
       //---------------------------random Generator-----------------------------------------//
       randPos = 0;
+      if(gen2 == 0) gen2 = primeNum[count%10];
       for(int i=0;i<count;i++){
          randPos += (freePos[i]*freePos[i])%43;
       }
       randPos = abs((int)((gen1%41) * randPos))%count;
       int gen1Tmp = gen1;
       gen1 = gen2;
-      gen2 = (int)(gen2 * gen1Tmp * randPos);
+      gen2 = (int)(gen2 * gen1Tmp * randPos + 1427);
       
       board[freePos[randPos]/n][freePos[randPos]%n] = 2; //fill a new item(number 2) in board.
       //---------------------------random Generator-----------------------------------------//
       
       //---------------------------show Board-----------------------------------------//
       for(int i=0;i<n;i++){
+         printf("\t");
          for(int j=0;j<n;j++){
             printf("\t%d", board[i][j]);
          }
          printf("\r\n");
       }
-      printf("\t-add new [2] in (%d,%d)-\r\n",freePos[randPos]/n,freePos[randPos]%n);
+      printf("\t\tadd new [2] in (%d,%d)\r\n",freePos[randPos]/n,freePos[randPos]%n);
       printf("\r\n");
       printf("\r\n");
       //---------------------------show Board-----------------------------------------//
@@ -101,7 +101,7 @@ void main()
       keyInput = getc();
       switch(keyInput){
          case 'a': //move items to the left if can.
-            printf("\t\t----Left----\r\n");
+            printf("\t\t\t----Left----\r\n");
             for(int i=0;i<n;i++){
                for(int j=1;j<n;j++){
                   newPos = j;
@@ -117,7 +117,7 @@ void main()
                      }
                   }
                   if(newPos!=j){
-                     score += value;
+                     if(value > 2) score += value;
                      board[i][newPos] = value;
                      board[i][j] = 0;
                   }
@@ -126,7 +126,7 @@ void main()
             
             break;
          case 'd': //move items to the right if can.
-            printf("\t\t---Right---\r\n");
+            printf("\t\t\t---Right---\r\n");
             for(int i=0;i<n;i++){
                for(int j=1;j<n;j++){
                   newPos = n-1-j;
@@ -142,7 +142,7 @@ void main()
                      }
                   }
                   if(newPos!=n-1-j){
-                     score += value;
+                     if(value > 2) score += value;
                      board[i][newPos] = value;
                      board[i][n-1-j] = 0;
                   }
@@ -150,7 +150,7 @@ void main()
             }
             break;
          case 'w': //move items to the top if can.
-            printf("\t\t----Top----\r\n");
+            printf("\t\t\t----Top----\r\n");
             for(int i=0;i<n;i++){
                for(int j=1;j<n;j++){
                   newPos = j;
@@ -166,7 +166,7 @@ void main()
                      }
                   }
                   if(newPos!=j){
-                     score += value;
+                     if(value > 2) score += value;
                      board[newPos][i] = value;
                      board[j][i] = 0;
                   }
@@ -174,7 +174,7 @@ void main()
             }
             break;
          case 's': //move items to the bottom if can.
-            printf("\t\t----Bottom----\r\n");
+            printf("\t\t\t---Bottom---\r\n");
             for(int i=0;i<n;i++){
                for(int j=1;j<n;j++){
                   newPos = n-1-j;
@@ -190,7 +190,7 @@ void main()
                      }
                   }
                   if(newPos!=n-1-j){
-                     score += value;
+                     if(value > 2) score += value;
                      board[newPos][i] = value;
                      board[n-1-j][i] = 0;
                   }
